@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Stella's Diner</title>
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Pizza Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //Custom Theme files -->
+<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+<!--js-->
+<script src="js/jquery-1.11.1.min.js"></script> 
+<script src="js/modernizr.custom.js"></script>
+<!-- //js -->
+<script>
+	$(document).ready(function () {
+	    size_li = $("#myList li").size();
+	    x=1;
+	    $('#myList li:lt('+x+')').show();
+	    $('#loadMore').click(function () {
+	        x= (x+1 <= size_li) ? x+1 : size_li;
+	        $('#myList li:lt('+x+')').show();
+	    });
+	    $('#showLess').click(function () {
+	        x=(x-1<0) ? 1 : x-1;
+	        $('#myList li').not(':lt('+x+')').hide();
+	    });
+	});
+</script>
+</head>
+<body>
+	<!--banner-->
+	<div class="banner">
+		<div class="banner-info">
+			<div class="container">
+				<div class="logo">
+					<div class="ribbon">
+						<div class="ribbon-fold"><h1><a href="index.html">Stella's Diner</a></h1></div>
+					</div>
+				</div>			
+				<!--navigation-->
+				<div class="top-nav">
+					<nav class="navbar navbar-default">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav navbar-center cl-effect-14">
+								<li><a href="index.html" class="active">Home</a></li>
+								<li><a href="about.html">Bio</a></li>					
+								<li><a href="codes.html">Merchandise</a></li>
+								<li><a href="gallery.html">Gallery</a></li>	
+								<li><a href="contact.html">Contact</a></li>
+							</ul>	
+							<div class="clearfix"> </div>
+						</div>	
+					</nav>		
+				</div>	
+				<!--navigation-->
+			</div>
+		</div>
+	</div>
+	<!--//banner-->
+	<!--banner-bottom-->
+	<div class="banner-bottom">
+		<div class="container">
+			<div class="banner-text">
+				<h3>EAT IT You'll Like It</h3>
+				<p>Off-Campus Meal Plan (OCMP)</p>
+				<a href="http://ocmp.com" class="btn btn-1 btn-1b">More</a>
+			</div>
+			<!--welcome-->
+			<div class="welcome">
+				<h3 class="title">Welcome</h3>
+				<div class="welcome-info">
+					<div class="col-md-3">
+					</div>
+					<div class="col-md-6 welcome-grids">
+						<div class="welcome-img">
+							<img src="images/img1.jpg" class="img-responsive zoom-img" alt=""/>
+						</div>
+					</div>
+					<div class="col-md-3">
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<h3 class="title" style="font-size: 25px;">Hours: <br>
+					Monday, Tuesday & Wednesday 5am - 2:30pm <br>
+					Thursday, Friday & Saturday 5am - 9pm <br>
+					Sunday 5am - 6pm </h3>			
+			</div>
+			<!--//welcome-->
+		</div>
+	</div>
+	<!--//banner-bottom-->
+	<!--services-->
+	<div class="services" style="background-color: yellow;">
+		<div class="container">
+			<h3 class="title">Menu</h3>
+			<div class="welcome-info">
+				<div class="col-md-3">
+				</div>
+				<div class="col-md-6 welcome-grids">
+					<div class="welcome-img">
+						<img src="images/menu.gif" class="img-responsive zoom-img" alt=""/>
+					</div>
+				</div>
+				<div class="col-md-3">
+				</div>
+				<div class="clearfix"> </div>
+				<br>
+				<a href="http://stellasdinersyracuse.com/stellasmenu.pdf"><u style="color: red;"><p> 
+					Clicking here or on the menu cover will open the menu.<br> 
+					You will need acrobat reader to view the menu.<br> 
+					Menu availability and prices subject to change without notice.
+				</p></u></a>
+			</div>
+		</div>
+	</div>
+	<!--//services-->
+	<!--menu-->
+	<div class="menu">
+		<div class="container">
+			<div class="menu-tag">
+				<h3 class="title">Weekly Specials</h3>
+				<br>
+				<h4 style="text-align: center;">MON, MAY 29 - SUN, JUNE 4</h4>
+			</div>
+			<div class="load_more">	
+				<ul id="myList">
+					<li>
+						<div class="l_g">
+							<div class="l_g_r">
+								<div class="col-md-6 menu-grids">
+									<div class="menu-text">
+										<div class="menu-text-left">
+											<h4>1/2 DEAN MARTIN PASTA,<br>REUBEN w/ SOUP </h4>
+										</div>
+										<div class="menu-text-midle">
+											<span class="line"> </span>
+										</div>
+										<div class="menu-text-right">
+											<h4>Mon <br> 5/29</h4>
+										</div>
+										<div class="clearfix"> </div>
+									</div>	
+									<div class="menu-text">
+										<div class="menu-text-left">
+											<h4>MEATBALL SUB, <br> 1/2 GREEK PASTA</h4>
+										</div>
+										<div class="menu-text-midle">
+											<span class="line"> </span>
+										</div>
+										<div class="menu-text-right">
+											<h4>Tue <br> 5/30</h4>
+										</div>
+										<div class="clearfix"> </div>
+									</div>
+									<div class="menu-text">
+										<div class="menu-text-left">
+											<h4>1/2 RATTLESNAKE PASTA, <br> CAJUN TURKEY MELT </h4>
+										</div>
+										<div class="menu-text-midle">
+											<span class="line"> </span>
+										</div>
+										<div class="menu-text-right">
+											<h4>Wed <br> 5/31</h4>
+										</div>
+										<div class="clearfix"> </div>
+									</div>
+									<div class="menu-text">
+										<div class="menu-text-left">
+											<h4>MEATLOAF DINNER, <br> CORNED BEEF MELT </h4>
+										</div>
+										<div class="menu-text-midle">
+											<span class="line"> </span>
+										</div>
+										<div class="menu-text-right">
+											<h4>Thu <br> 6/1</h4>
+										</div>
+										<div class="clearfix"> </div>
+									</div>
+								</div>
+								<div class="col-md-6 menu-grids">
+									<div class="menu-text">
+										<div class="menu-text-left">
+											<h4>FRIED SEAFOOD COMBO, <br> CHICKEN RIGGIES, <br> VEAL PARM w/PASTA </h4>
+										</div>
+										<div class="menu-text-midle">
+											<span class="line"> </span>
+										</div>
+										<div class="menu-text-right">
+											<h4>Fri <br> 6/2</h4>
+										</div>
+										<div class="clearfix"> </div>
+									</div>	
+									<div class="menu-text">
+										<div class="menu-text-left">
+											<h4>POT ROAST DINNER </h4>
+										</div>
+										<div class="menu-text-midle">
+											<span class="line"> </span>
+										</div>
+										<div class="menu-text-right">
+											<h4>Sat <br> 6/3</h4>
+										</div>
+										<div class="clearfix"> </div>
+									</div>
+									<div class="menu-text">
+										<div class="menu-text-left">
+											<h4>CHOP STEAK DINNER </h4>
+										</div>
+										<div class="menu-text-midle">
+											<span class="line"> </span>
+										</div>
+										<div class="menu-text-right">
+											<h4>Sun <br> 6/4</h4>
+										</div>
+										<div class="clearfix"> </div>
+									</div>
+								</div>
+							</div> 
+						</div>	
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!--//menu-->
+	<!-- testimonial -->
+	<div class="testimonial">
+		<!-- container -->
+		<div class="container">
+			<h3 class="title">Comments and Complaints</h3>
+			<!-- banner-text Slider starts Here -->
+			<script src="js/responsiveslides.min.js"></script>
+			 <script>
+				// You can also use "$(window).load(function() {"
+					$(function () {
+					// Slideshow 4
+						$("#slider3").responsiveSlides({
+						auto: true,
+						pager:true,
+						nav:false,
+						speed: 500,
+						namespace: "callbacks",
+						before: function () {
+						$('.events').append("<li>before event fired.</li>");
+						},
+						after: function () {
+							$('.events').append("<li>after event fired.</li>");
+						}
+					});	
+				});
+			</script>
+			<!--//End-slider-script -->
+			<div  id="top" class="callbacks_container">
+				<ul class="rslides" id="slider3">
+					<li>
+						<div class="testimonial-grids">
+							<div class="testimonial-left">
+								<img src="images/t2.jpg" alt="" />
+							</div>
+							<div class="testimonial-right">
+								<h5>John</h5>
+								<p><span>"</span> One of the nice things about designing web sites is that I usually get to post the first comment. I had fun doing the web pages and I hope all the girls (oops meant all the women) like it. I will be sure to tell ALL my friends (all 6 of them) to come out to the diner. Enjoy and good luck. <span>"</span>
+								</p>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+					</li>
+					<li>
+						<div class="testimonial-grids">
+							<div class="testimonial-left">
+								<img src="images/t2.jpg" alt="" />
+							</div>
+							<div class="testimonial-right">
+								<h5>Bobbi MacDonald</h5>
+								<p><span>"</span> My husband and I would like to know what hours your dinner and also your lunch menus are served. Do you have any plans for ever being open all night on weekends? Thank you.  <span>"</span>
+								</p>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+					</li>
+					<li>
+						<div class="testimonial-grids">
+							<div class="testimonial-left">
+								<img src="images/t2.jpg" alt="" />
+							</div>
+							<div class="testimonial-right">
+								<h5>C. Paul Oakes</h5>
+								<p><span>"</span> Although I now live in Chapel Hill, NC, Syracuse is home for me. Every time I make a trip back home I make a point to visit Stella's Diner. The food is so good and like nothing I can find here (and we have good food here.) Cheers, Paul  <span>"</span>
+								</p>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+					</li>
+					<li>
+						<div class="testimonial-grids">
+							<div class="testimonial-left">
+								<img src="images/t2.jpg" alt="" />
+							</div>
+							<div class="testimonial-right">
+								<h5>Norma and Jeff Thorn</h5>
+								<p><span>"</span> We just wanted to let you know that we throughly enjoyed eating at Stella's when we visited Syracuse last Labor Day weekend so much that we came back the next day for breakfast. <span>"</span>
+								</p>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- //container -->
+	</div>
+	<!-- //testimonial -->
+	<!--footer-->
+	<div class="footer">
+		<div class="container">
+			<div class="col-md-5 footer-left">
+				<h4>Address</h4>
+				<ul>
+					<li>110 Wolf Street</li>
+					<li>Syracuse N.Y.</li>
+					<li>Corner of </li>
+					<li>Wolf St. & Lodi St. </li>
+				</ul>				
+			</div>
+			<div class="col-md-5 footer-left">
+		 		<h4>Navigation</h4>
+				<ul>
+					<li><a href="about.html">Bio</a></li>
+					<li><a href="codes.html">Merchandise</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+			<div class="col-md-2 footer-right">
+				<p> © 2016 Stella's Diner. <br> All rights reserved</p>
+				<div class="icons">
+				<ul>
+					<li><a href="#" class="twitter"> </a></li>
+					<li><a href="#" class="twitter facebook"> </a></li>
+					<li><a href="#" class="twitter chrome"> </a></li>
+					<li><a href="#" class="twitter pinterest"> </a></li>
+				</ul>
+			</div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!--//footer-->
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
