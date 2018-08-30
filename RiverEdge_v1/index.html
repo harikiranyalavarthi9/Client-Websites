@@ -1,0 +1,1858 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>River Edge Mansion </title>
+      <meta content="Syracuse, New York B&B, River Edge Mansion Bed and Breakfast, Erie Canal  lodging, NY Inn is located near Destiny USA in Central New York between the Finger Lakes and the Adirondack Regions of NY. " name="description" />
+      <meta content="River Edge Mansion, Pennellville NY, Weddings, B & B Services, Accommodations, Private Docking, Destiny USA" name="keywords" />
+      <meta content="Daniel Bereza" name="author" />
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" media="all">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" media="all">
+     <!-- <link rel="stylesheet" type="text/css" href="styles/main.css" /> -->
+     <!-- <script type="text/javascript" src="js/jquery.js"></script> -->
+     <!-- <script src="js/Carousel.js"></script> -->
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css" />
+      <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css" />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <link href="https://vjs.zencdn.net/5.8.8/video-js.css" rel="stylesheet" />
+      <!-- If you'd like to support IE8 -->
+      <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+     <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> -->
+
+<!--Video lightbox essentials-->
+       <link rel="stylesheet" href="css/lightbox.min.css">
+      <!-- <script src="js/lightbox-plus-jquery.min.js"></script>-->
+
+      <!--<link rel="stylesheet" href="/resources/demos/style.css">-->
+      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+      <link rel="shortcut icon" href="img/logo.png">
+     <style type="text/css">
+
+
+      /*
+         Body color scheme:  #e3f2fd
+         Gold Color: #DAA520
+         Darker Gold: #B8860B
+         grey: #eeeeee;
+         navy: #566E81;
+    */
+
+        body{
+            background-color: #e3f2fd;
+        }
+         #dialog-overlay {
+         /* set it to fill the whil screen */
+         width:100%;
+         height:100%;
+         /* transparency for different browsers */
+         filter:alpha(opacity=50);
+         -moz-opacity:0.5;
+         -khtml-opacity: 0.5;
+         opacity: 0.5;
+         background:#000;
+         /* make sure it appear behind the dialog box but above everything else */
+         position:absolute;
+         top:0; left:0;
+         z-index:3000;
+         /* hide it by default */
+         display:none;
+         }
+         #dialog-box {
+         /* css3 drop shadow */
+         -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+         -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+         /* css3 border radius */
+         -moz-border-radius: 5px;
+         -webkit-border-radius: 5px;
+         background:#eee;
+         /* styling of the dialog box, i have a fixed dimension for this demo */
+         width:328px;
+         /* make sure it has the highest z-index */
+         position:absolute;
+         z-index:5000;
+         /* hide it by default */
+         display:none;
+         }
+         #dialog-box .dialog-content {
+         /* style the content */
+         text-align:left;
+         padding:10px;
+         margin:13px;
+         color:#666;
+         font-family:arial;
+         font-size:11px;
+         }
+         a.button {
+         /* styles for button */
+         margin:10px auto 0 auto;
+         text-align:center;
+         background-color: #e33100;
+         display: block;
+         width:50px;
+         padding: 5px 10px 6px;
+         color: #fff;
+         text-decoration: none;
+         font-weight: bold;
+         line-height: 1;
+         /* css3 implementation :) */
+         -moz-border-radius: 5px;
+         -webkit-border-radius: 5px;
+         -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+         -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+         text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+         border-bottom: 1px solid rgba(0,0,0,0.25);
+         position: relative;
+         cursor: pointer;
+         }
+         a.button:hover {
+         background-color: #c33100;
+         }
+         /* extra styling */
+         #dialog-box .dialog-content p {
+         font-weight:700; margin:0;
+         }
+         #dialog-box .dialog-content ul {
+         margin:10px 0 10px 20px;
+         padding:0;
+         height:50px;
+         }
+         body {
+         font: 400 15px Lato, sans-serif;
+         line-height: 1.8;
+         color: #818181;
+         }
+         h2 {
+         font-size: 24px;
+         text-transform: uppercase;
+         color: #303030;
+         font-weight: 600;
+         margin-bottom: 30px;
+         }
+         h4 {
+         font-size: 19px;
+         line-height: 1.375em;
+         color: #303030;
+         font-weight: 400;
+         margin-bottom: 30px;
+         }
+         .jumbotron {
+         background-color: steelblue;
+         color: #fff;
+         padding-top: 70px;
+         font-family: Montserrat, sans-serif;
+         }
+         .container-fluid {
+         padding: 15px 50px;
+         }
+         .bg-grey {
+          /*background-color: #B4D4E7;*/
+         background-color: #eeeeee;
+         }
+         .logo-small {
+         color: #f4511e;
+         font-size: 50px;
+         }
+         .thumbnail {
+         padding: 0 0 15px 0;
+         border: none;
+         border-radius: 0;
+         }
+         .thumbnail img {
+         width: 100%;
+         height: 100%;
+         margin-bottom: 10px;
+         }
+         .carousel-control.right, .carousel-control.left {
+         background-image: none;
+         color: #f4511e;
+         }
+         .carousel-indicators li {
+         border-color: #f4511e;
+         }
+         .carousel-indicators li.active {
+         background-color: #f4511e;
+         }
+         .item h4 {
+         font-size: 19px;
+         line-height: 1.375em;
+         font-weight: 400;
+         font-style: italic;
+         margin: 70px 0;
+         }
+         .item span {
+         font-style: normal;
+         }
+         .panel {
+         border: 1px solid #f4511e;
+         border-radius:0 !important;
+         transition: box-shadow 0.5s;
+         }
+         .panel:hover {
+         box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+         }
+         .panel-footer .btn:hover {
+         border: 1px solid #f4511e;
+         background-color: #fff !important;
+         color: #f4511e;
+         }
+         .panel-heading {
+         color: #fff !important;
+         background-color: #f4511e !important;
+         padding: 25px;
+         border-bottom: 1px solid transparent;
+         border-top-left-radius: 0px;
+         border-top-right-radius: 0px;
+         border-bottom-left-radius: 0px;
+         border-bottom-right-radius: 0px;
+         }
+         .panel-footer {
+         background-color: white !important;
+         }
+         .panel-footer h3 {
+         font-size: 32px;
+         }
+         .panel-footer h4 {
+         color: #aaa;
+         font-size: 14px;
+         }
+         .panel-footer .btn {
+         margin: 15px 0;
+         background-color: #f4511e;
+         color: #fff;
+         }
+
+         footer .glyphicon {
+         font-size: 20px;
+         margin-bottom: 20px;
+         color: #f4511e;
+         }
+         .slideanim {visibility:hidden;}
+         .slide {
+         animation-name: slide;
+         -webkit-animation-name: slide;
+         animation-duration: 1s;
+         -webkit-animation-duration: 1s;
+         visibility: visible;
+         }
+         @keyframes slide {
+         0% {
+         opacity: 0;
+         transform: translateY(70%);
+         }
+         100% {
+         opacity: 1;
+         transform: translateY(0%);
+         }
+         }
+         @-webkit-keyframes slide {
+         0% {
+         opacity: 0;
+         -webkit-transform: translateY(70%);
+         }
+         100% {
+         opacity: 1;
+         -webkit-transform: translateY(0%);
+         }
+         }
+         @media screen and (max-width: 768px) {
+         .col-sm-4 {
+         text-align: center;
+         margin: 25px 0;
+         }
+         .btn-lg {
+         width: 100%;
+         margin-bottom: 35px;
+         }
+         }
+         @media screen and (max-width: 480px) {
+         .logo {
+         font-size: 150px;
+         }
+         }
+         @media (min-width: 768px)
+         .col-sm-6 {
+         width: 91%;
+         }
+         .hovereffect {
+         width:100%;
+         height:100%;
+         float:left;
+         overflow:hidden;
+         position:relative;
+         text-align:center;
+         cursor:default;
+         }
+         .hovereffect .overlay {
+         border: 5px groove;
+         width:100%;
+         height:100%;
+         position:absolute;
+         overflow:hidden;
+         top:0;
+         left:0;
+         opacity:0;
+         background-color:rgba(0,0,0,0.5);
+         -webkit-transition:all .4s ease-in-out;
+         transition:all .4s ease-in-out
+         }
+         .hovereffect img {
+         display:block;
+         position:relative;
+         -webkit-transition:all .4s linear;
+         transition:all .4s linear;
+         }
+         .hovereffect h2 {
+         text-transform:uppercase;
+         color:#fff;
+         text-align:center;
+         position:relative;
+         font-size:17px;
+         background:rgba(0,0,0,0.6);
+         -webkit-transform:translatey(-100px);
+         -ms-transform:translatey(-100px);
+         transform:translatey(-100px);
+         -webkit-transition:all .2s ease-in-out;
+         transition:all .2s ease-in-out;
+         padding:10px;
+         }
+         .hovereffect a.info {
+         text-decoration:none;
+         display:inline-block;
+         text-transform:uppercase;
+         color:#fff;
+         border:1px solid #fff;
+         background-color:transparent;
+         opacity:0;
+         filter:alpha(opacity=0);
+         -webkit-transition:all .2s ease-in-out;
+         transition:all .2s ease-in-out;
+         margin:50px 0 0;
+         padding:7px 14px;
+         }
+         .hovereffect a.info:hover {
+         box-shadow:0 0 5px #fff;
+         }
+         .hovereffect:hover img {
+         -ms-transform:scale(1.2);
+         -webkit-transform:scale(1.2);
+         transform:scale(1.2);
+         }
+         .hovereffect:hover .overlay {
+         opacity:1;
+         filter:alpha(opacity=100);
+         }
+         .hovereffect:hover h2,.hovereffect:hover a.info {
+         opacity:1;
+         filter:alpha(opacity=100);
+         -ms-transform:translatey(0);
+         -webkit-transform:translatey(0);
+         transform:translatey(0);
+         }
+         .hovereffect:hover a.info {
+         -webkit-transition-delay:.2s;
+         transition-delay:.2s;
+         }
+
+         /*=========================
+         Icons
+         ================= */
+         /* footer social icons */
+         ul.social-network {
+         list-style: none;
+         display: inline;
+         margin-left:0 !important;
+         padding: 0;
+         }
+         ul.social-network li {
+         display: inline;
+         margin: 0 5px;
+         }
+         /* footer social icons */
+         .social-network a.icoRss:hover {
+         background-color: #F56505;
+         }
+         .social-network a.icoFacebook:hover {
+         background-color:#3B5998;
+         }
+         .social-network a.icoTwitter:hover {
+         background-color:#33ccff;
+         }
+         .social-network a.icoGoogle:hover {
+         background-color:#BD3518;
+         }
+         .social-network a.icoVimeo:hover {
+         background-color:#0590B8;
+         }
+         .social-network a.icoLinkedin:hover {
+         background-color:#007bb7;
+         }
+         .social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
+         .social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
+         color:#fff;
+         }
+         a.socialIcon:hover, .socialHoverClass {
+         color:#44BCDD;
+         }
+         .social-circle li a {
+         display:inline-block;
+         position:relative;
+         margin:0 auto 0 auto;
+         -moz-border-radius:50%;
+         -webkit-border-radius:50%;
+         border-radius:50%;
+         text-align:center;
+         width: 50px;
+         height: 50px;
+         font-size:20px;
+         }
+         .social-circle li i {
+         margin:0;
+         line-height:50px;
+         text-align: center;
+         }
+         .social-circle li a:hover i, .triggeredHover {
+         -moz-transform: rotate(360deg);
+         -webkit-transform: rotate(360deg);
+         -ms--transform: rotate(360deg);
+         transform: rotate(360deg);
+         -webkit-transition: all 0.2s;
+         -moz-transition: all 0.2s;
+         -o-transition: all 0.2s;
+         -ms-transition: all 0.2s;
+         transition: all 0.2s;
+         }
+         .social-circle i {
+         color: #fff;
+         -webkit-transition: all 0.8s;
+         -moz-transition: all 0.8s;
+         -o-transition: all 0.8s;
+         -ms-transition: all 0.8s;
+         transition: all 0.8s;
+         }
+         a {
+         background-color: none;
+         }
+         #boxshadow {
+         position: relative;
+         -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0,0.5);
+         -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+         box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+         padding: 10px;
+         background: white;
+         }
+         /* Make the image fit the box */
+         #boxshadow img {
+         width: 100%;
+         border: 1px solid #8a4419;
+         border-style: inset;
+         height: 50%
+         }
+         #boxshadow::after {
+         content: '';
+         position: absolute;
+         z-index: -1; /* hide shadow behind image */
+         -webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+         -moz-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+         box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+         width: 70%;
+         left: 15%; /* one half of the remaining 30% */
+         height: 100px;
+         bottom: 0;
+         }
+         .bs-slider{
+         overflow: hidden;
+         max-height: 700px;
+         position: relative;
+         background: #000000;
+         }
+         .bs-slider:hover {
+         cursor: -moz-grab;
+         cursor: -webkit-grab;
+         }
+         .bs-slider:active {
+         cursor: -moz-grabbing;
+         cursor: -webkit-grabbing;
+         }
+         .bs-slider .bs-slider-overlay {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background-color: rgba(0, 0, 0, 0.40);
+         }
+         .bs-slider > .carousel-inner > .item > img,
+         .bs-slider > .carousel-inner > .item > a > img {
+         margin: auto;
+         width: 100% !important;
+         }
+         /********************
+         *****Slide effect
+         **********************/
+         .fade {
+         opacity: 1;
+         }
+         .fade .item {
+         top: 0;
+         z-index: 1;
+         opacity: 0;
+         width: 100%;
+         position: absolute;
+         left: 0 !important;
+         display: block !important;
+         -webkit-transition: opacity ease-in-out 1s;
+         -moz-transition: opacity ease-in-out 1s;
+         -ms-transition: opacity ease-in-out 1s;
+         -o-transition: opacity ease-in-out 1s;
+         transition: opacity ease-in-out 1s;
+         }
+         .fade .item:first-child {
+         top: auto;
+         position: relative;
+         }
+         .fade .item.active {
+         opacity: 1;
+         z-index: 2;
+         -webkit-transition: opacity ease-in-out 1s;
+         -moz-transition: opacity ease-in-out 1s;
+         -ms-transition: opacity ease-in-out 1s;
+         -o-transition: opacity ease-in-out 1s;
+         transition: opacity ease-in-out 1s;
+         }
+         /*---------- LEFT/RIGHT ROUND CONTROL ----------*/
+         .control-round .carousel-control {
+         top: 47%;
+         opacity: 0;
+         width: 45px;
+         height: 45px;
+         z-index: 100;
+         color: #ffffff;
+         display: block;
+         font-size: 24px;
+         cursor: pointer;
+         overflow: hidden;
+         line-height: 43px;
+         text-shadow: none;
+         position: absolute;
+         font-weight: normal;
+         background: transparent;
+         -webkit-border-radius: 100px;
+         border-radius: 100px;
+         }
+         .control-round:hover .carousel-control{
+         opacity: 1;
+         }
+         .control-round .carousel-control.left {
+         left: 1%;
+         }
+         .control-round .carousel-control.right {
+         right: 1%;
+         }
+         .control-round .carousel-control.left:hover,
+         .control-round .carousel-control.right:hover{
+         color: #fdfdfd;
+         background: rgba(0, 0, 0, 0.5);
+         border: 0px transparent;
+         }
+         .control-round .carousel-control.left>span:nth-child(1){
+         left: 45%;
+         }
+         .control-round .carousel-control.right>span:nth-child(1){
+         right: 45%;
+         }
+         /*---------- INDICATORS CONTROL ----------*/
+         .indicators-line > .carousel-indicators{
+         right: 45%;
+         bottom: 3%;
+         left: auto;
+         width: 90%;
+         height: 20px;
+         font-size: 0;
+         overflow-x: auto;
+         text-align: right;
+         overflow-y: hidden;
+         padding-left: 10px;
+         padding-right: 10px;
+         padding-top: 1px;
+         white-space: nowrap;
+         }
+         .indicators-line > .carousel-indicators li{
+         padding: 0;
+         width: 15px;
+         height: 15px;
+         border: 1px solid rgb(158, 158, 158);
+         text-indent: 0;
+         overflow: hidden;
+         text-align: left;
+         position: relative;
+         letter-spacing: 1px;
+         background: rgb(158, 158, 158);
+         -webkit-font-smoothing: antialiased;
+         -webkit-border-radius: 50%;
+         border-radius: 50%;
+         margin-right: 5px;
+         -webkit-transition: all 0.5s cubic-bezier(0.22,0.81,0.01,0.99);
+         transition: all 0.5s cubic-bezier(0.22,0.81,0.01,0.99);
+         z-index: 10;
+         cursor:pointer;
+         }
+         .indicators-line > .carousel-indicators li:last-child{
+         margin-right: 0;
+         }
+         .indicators-line > .carousel-indicators .active{
+         margin: 1px 5px 1px 1px;
+         box-shadow: 0 0 0 2px #fff;
+         background-color: transparent;
+         position: relative;
+         -webkit-transition: box-shadow 0.3s ease;
+         -moz-transition: box-shadow 0.3s ease;
+         -o-transition: box-shadow 0.3s ease;
+         transition: box-shadow 0.3s ease;
+         -webkit-transition: background-color 0.3s ease;
+         -moz-transition: background-color 0.3s ease;
+         -o-transition: background-color 0.3s ease;
+         transition: background-color 0.3s ease;
+         }
+         .indicators-line > .carousel-indicators .active:before{
+         transform: scale(0.5);
+         background-color: #fff;
+         content:"";
+         position: absolute;
+         left:-1px;
+         top:-1px;
+         width:15px;
+         height: 15px;
+         border-radius: 50%;
+         -webkit-transition: background-color 0.3s ease;
+         -moz-transition: background-color 0.3s ease;
+         -o-transition: background-color 0.3s ease;
+         transition: background-color 0.3s ease;
+         }
+         /*---------- SLIDE CAPTION ----------*/
+         .slide_style_left {
+         text-align: left !important;
+         }
+         .slide_style_right {
+         text-align: right !important;
+         }
+         .slide_style_center {
+         text-align: center !important;
+         }
+         .slide-text {
+         left: 0;
+         top: 25%;
+         right: 0;
+         margin: auto;
+         padding: 10px;
+         position: absolute;
+         text-align: left;
+         padding: 10px 85px;
+         }
+         .slide-text > h1 {
+         padding: 0;
+         color: #ffffff;
+         font-size: 70px;
+         font-style: normal;
+         line-height: 84px;
+         margin-bottom: 30px;
+         letter-spacing: 1px;
+         display: inline-block;
+         -webkit-animation-delay: 0.7s;
+         animation-delay: 0.7s;
+         }
+         .slide-text > p {
+         padding: 0;
+         color: #ffffff;
+         font-size: 20px;
+         line-height: 24px;
+         font-weight: 300;
+         margin-bottom: 40px;
+         letter-spacing: 1px;
+         -webkit-animation-delay: 1.1s;
+         animation-delay: 1.1s;
+         }
+         .slide-text > a.btn-default{
+         color: #000;
+         font-weight: 400;
+         font-size: 13px;
+         line-height: 15px;
+         margin-right: 10px;
+         text-align: center;
+         padding: 17px 30px;
+         white-space: nowrap;
+         letter-spacing: 1px;
+         display: inline-block;
+         border: none;
+         text-transform: uppercase;
+         -webkit-animation-delay: 2s;
+         animation-delay: 2s;
+         -webkit-transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+         transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+         }
+         .slide-text > a.btn-primary{
+         color: #ffffff;
+         cursor: pointer;
+         font-weight: 400;
+         font-size: 13px;
+         line-height: 15px;
+         margin-left: 10px;
+         text-align: center;
+         padding: 17px 30px;
+         white-space: nowrap;
+         letter-spacing: 1px;
+         background: #00bfff;
+         display: inline-block;
+         text-decoration: none;
+         text-transform: uppercase;
+         border: none;
+         -webkit-animation-delay: 2s;
+         animation-delay: 2s;
+         -webkit-transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+         transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+         }
+         .slide-text > a:hover,
+         .slide-text > a:active {
+         color: #ffffff;
+         background: #222222;
+         -webkit-transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+         transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+         }
+         /*------------------------------------------------------*/
+         /* RESPONSIVE
+         /*------------------------------------------------------*/
+         @media (max-width: 991px) {
+         .slide-text h1 {
+         font-size: 40px;
+         line-height: 50px;
+         margin-bottom: 20px;
+         }
+         .slide-text > p {
+         font-size: 18px;
+         }
+         }
+         /*---------- MEDIA 480px ----------*/
+         @media  (max-width: 768px) {
+         .slide-text {
+         padding: 10px 50px;
+         }
+         .slide-text h1 {
+         font-size: 30px;
+         line-height: 40px;
+         margin-bottom: 10px;
+         }
+         .slide-text > p {
+         font-size: 14px;
+         line-height: 20px;
+         margin-bottom: 20px;
+         }
+         .control-round .carousel-control{
+         display: none;
+         }
+         }
+         @media  (max-width: 480px) {
+         .slide-text {
+         padding: 10px 30px;
+         }
+         .slide-text h1 {
+         font-size: 20px;
+         line-height: 25px;
+         margin-bottom: 5px;
+         }
+         .slide-text > p {
+         font-size: 12px;
+         line-height: 18px;
+         margin-bottom: 10px;
+         }
+         .slide-text > a.btn-default,
+         .slide-text > a.btn-primary {
+         font-size: 10px;
+         line-height: 10px;
+         margin-right: 10px;
+         text-align: center;
+         padding: 10px 15px;
+         }
+         .indicators-line > .carousel-indicators{
+         display: none;
+         }
+         }
+         <!--
+            @media (min-width: 768px) and  (max-width: 2000px){
+              .over{
+               width: 170%;
+              }
+            }
+            -->
+         .over{
+         width: 100%;
+         }
+         .video-section .pattern-overlay {
+         //background-color: rgba(71, 71, 71, 0.59);
+         padding: 17px 0 32px;
+         min-height: 290px;
+         /* Incase of overlay problems just increase the min-height*/
+         }
+         .video-section h1, .video-section h3{
+         text-align:center;
+         color:#fff;
+         }
+         .video-section h1{
+         font-size:60px;
+         font-family: 'Buenard', serif;
+         font-weight:bold;
+         text-transform: uppercase;
+         margin: 40px auto 0px;
+         text-shadow: 1px 1px 1px #000;
+         -webkit-text-shadow: 1px 1px 1px #000;
+         -moz-text-shadow: 1px 1px 1px #000;
+         }
+         .video-section h3{
+         font-size: 25px;
+         font-weight:lighter;
+         margin: 0px auto 15px;
+         }
+         .video-section .buttonBar{display:none;}
+         .player {font-size: 1px;}
+
+
+
+.strike {
+    display: block;
+    color: navy;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.strike > span {
+    position: relative;
+    display: inline-block;
+}
+
+.strike > span:before,
+.strike > span:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 9999px;
+    height: 1px;
+    background: grey;
+}
+
+.strike > span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+
+.strike > span:after {
+    left: 100%;
+    margin-left: 15px;
+}
+
+
+.exclusive {
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.exclusive > span {
+    position: relative;
+    display: inline-block;
+}
+
+.exclusive > span:before,
+.exclusive > span:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 9999px;
+    height: 1px;
+    background: white;
+}
+
+.exclusive > span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+
+.exclusive > span:after {
+    left: 100%;
+    margin-left: 15px;
+}
+
+
+
+
+
+
+
+@media (max-width: 770px) {
+
+#imageLogo{
+     height: 35px;
+     width: 110px;
+    }
+
+
+
+  }
+
+
+@media (max-width: 993px) {
+
+#imageLogo{
+     height: 35px;
+     width: 110px;
+    }
+
+  }
+
+@media (max-width: 582px) {
+
+.strike{
+   font-size: 20px;
+
+    }
+   }
+
+}
+
+
+@media (min-width: 700px) and (max-width: 2000px) {
+
+}
+
+
+@media (max-width: 2000px) and (max-width: 2000px){
+.strike{
+   font-size: 32px;
+    }
+
+  }
+
+}
+
+@media (max-width: 400px) and (max-width: 765px){
+.col-sm-8{
+width: 100%;
+ }
+}
+
+
+
+
+@media (min-width: 400px) and (max-width: 500px) {
+.check{
+
+    padding: 0px 0px 0px 90px;
+
+  }
+}
+
+@media (min-width: 500px) and (max-width: 600px) {
+.check{
+
+    padding: 0px 0px 0px 200px;
+
+  }
+}
+
+@media (min-width: 600px) and (max-width: 700px) {
+.check{
+
+    padding: 0px 0px 0px 280px;
+
+  }
+}
+
+@media (min-width: 700px) and (max-width: 800px) {
+.check{
+
+    padding: 0px 0px 0px 380px;
+
+  }
+}
+
+@media (min-width: 800px) and (max-width: 900px) {
+.check{
+
+    padding: 0px 0px 0px 500px;
+
+  }
+}
+
+
+@media (min-width: 900px) and (max-width: 1000px) {
+.check{
+
+    padding: 0px 0px 0px 645px;
+
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1100px) {
+.check{
+
+    padding: 0px 0px 0px 752px;
+
+  }
+}
+
+@media (min-width: 1100px) and (max-width: 1200px) {
+.check{
+
+    padding: 0px 0px 0px 792px;
+
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1300px) {
+.check{
+
+    padding: 0px 0px 0px 888px;
+
+  }
+}
+
+@media (min-width: 1300px) and (max-width: 1400px) {
+.check{
+
+    padding: 0px 0px 0px 1000px;
+
+  }
+}
+
+@media (min-width: 1400px) and (max-width: 1500px) {
+.check{
+
+    padding: 0px 0px 0px 1100px;
+
+  }
+}
+
+
+body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+@media (max-width: 993px){
+    #imageLogo{
+        width: 65px;
+        height: 50px;
+    }
+    #welcome{
+        font-size: 18px;
+    }
+}
+
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd;
+}
+
+button.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2212";
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+span{
+    color: #DAA520;
+}
+.col-sm-12{
+    background-color: #e3f2fd;
+}
+p{
+    color: black;
+    font-weight: bold;
+}
+.glyphicon, a{
+    color: #B8860B;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+
+      </style>
+
+   </head>
+   <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/lightgallery/1.3.9/css/lightgallery.css" />
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/lightgallery/1.3.9/js/lightgallery.min.js"> </script>
+
+<!--768 px  toggle-->
+
+   <body data-offset="60" data-spy="scroll" data-target=".navbar" id="myPage">
+
+     <nav class="navbar navbar-default navbar-fixed-top">
+   <div class="container-fluid">
+     <!-- Brand and toggle get grouped for better mobile display -->
+     <div class="navbar-header">
+       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+         <span class="sr-only">Toggle navigation</span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+       <a class="navbar-brand" href="index.html"><img src="img/logo.png"></a>
+     </div>
+
+     <!-- Collect the nav links, forms, and other content for toggling -->
+     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+       <ul class="nav navbar-nav middle">
+         <li class="dropdown">
+           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Welcome <span class="caret"></span></a>
+           <ul class="dropdown-menu">
+             <li><a href="index.html">Home</a></li>
+             <li><a href="history.html">History</a></li>
+             <li><a href="rooms.html">Rooms</a></li>
+             <li><a href="breakfast.html">Breakfast</a></li>
+             <li><a href="thingstodo.html">Things To Do</a></li>
+             <li><a href="weddings.html">Weddings</a></li>
+             <li><a href="comments.html">Guest Reviews</a></li>
+           </ul>
+         </li>
+         <li><a href="#rooms">Rooms</a></li>
+         <li><a href="#policies">Policies</a></li>
+         <li><a href="#specials">Specials</a></li>
+         <li><a href="http://riveredgemansion.blogspot.com" target="_blank">Blogs</a></li>
+
+       </ul>
+       <ul class="nav navbar-nav navbar-right">
+         <li class="right"><a href="mailto:riveredgemansion@gmail.com" target="_blank" > <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><strong>riveredgemansion@gmail.com</strong></a></li>
+         <li class="right"><a href="tel:1-315-695-3021"><span class=" glyphicon glyphicon-earphone" aria-hidden="true"></span><strong>315-695-3021</strong></a></li><br>
+        <li>
+            <a href="https://secure.thinkreservations.com/riveredgemansion/reservations" target="_blank"><button type="submit" class="btn btn-sm btn-primary">Check Room Availability</button></a>
+        </li>
+        <li>
+            <a href ="https://www.tripadvisor.com/Hotel_Review-g48379-d118682-Reviews-River_Edge_Mansion_Bed_and_Breakfast-Pennellville_Finger_Lakes_New_York.html" target="_blank">
+            <img class = "port" alt="River Edge Mansion Guests" src="img/tripadvisor.png" width="35"></a>
+        </li>
+        <li>
+            <a href = "https://www.facebook.com/River-Edge-Mansion-Bed-Breakfast-150426095397" target="_blank"><img class = "port" alt="River Edge Mansion Guests" src="img/facebook.png" width="35px"></a>
+         </li>
+       </ul>
+     </div><!-- /.navbar-collapse -->
+   </div><!-- /.container-fluid -->
+ </nav>
+ <link rel="stylesheet" href="css/navbar.css">
+
+         <div id="bootstrap-touch-slider" class="carousel bs-slider fade  control-round indicators-line" data-ride="carousel" data-pause="hover" data-interval="5000" >
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+               <li data-target="#bootstrap-touch-slider" data-slide-to="0" class="active"></li>
+               <li data-target="#bootstrap-touch-slider" data-slide-to="1"></li>
+               <li data-target="#bootstrap-touch-slider" data-slide-to="2"></li>
+               <li data-target="#bootstrap-touch-slider" data-slide-to="3"></li>
+               <li data-target="#bootstrap-touch-slider" data-slide-to="4"></li>
+               <li data-target="#bootstrap-touch-slider" data-slide-to="5"></li>
+
+
+            </ol>
+            <!-- Wrapper For Slides -->
+            <div class="carousel-inner" role="listbox">
+               <!-- Third Slide -->
+
+               <div class="item active">
+                  <!-- Slide Background -->
+                  <img src="img/IMG_3705.jpg" alt="Bootstrap Touch Slider"  class="slide-image"/>
+                  <div class="bs-slider-overlay"></div>
+                  <div class="container">
+                     <div class="row">
+                        <!-- Slide Text Layer -->
+                        <div class="slide-text slide_style_left">
+
+
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- End of Slide -->
+
+
+               <!-- Second Slide -->
+               <div class="item">
+                  <!-- Slide Background -->
+                  <img src="imgs/Home3.jpg" alt="Seneca Room"  class="slide-image"/>
+                  <div class="bs-slider-overlay"></div>
+                  <!-- Slide Text Layer -->
+
+                  <div class="slide-text slide_style_left">
+
+
+
+                        </div>
+               </div>
+               <!-- End of Slide -->
+
+
+
+
+
+               <!-- Second Slide -->
+               <div class="item">
+                  <!-- Slide Background -->
+                  <img src="imgs/Home2.jpg" alt="Seneca Room"  class="slide-image"/>
+                  <div class="bs-slider-overlay"></div>
+                  <!-- Slide Text Layer -->
+
+                  <div class="slide-text slide_style_left">
+
+
+
+                        </div>
+               </div>
+               <!-- End of Slide -->
+               <!-- Third Slide -->
+               <div class="item">
+                  <!-- Slide Background -->
+                  <img src="imgs/Home1.jpg" alt="Oneida Room"  class="slide-image"/>
+                  <div class="bs-slider-overlay"></div>
+                  <!-- Slide Text Layer -->
+                  <div class="slide-text slide_style_right">
+
+</p>
+                  </div>
+               </div>
+               <!-- End of Slide -->
+               <div class="item">
+                  <!-- Slide Background -->
+                  <img src="imgs/Home4.jpg" alt="The Garden"  class="slide-image"/>
+                  <div class="bs-slider-overlay"></div>
+                  <!-- Slide Text Layer -->
+                  <div class="slide-text slide_style_right">
+
+
+                  </div>
+               </div>
+               <div class="item">
+                  <!-- Slide Background -->
+                  <img src="imgs/Home5.jpg" alt="Bootstrap Touch Slider"  class="slide-image"/>
+                  <div class="bs-slider-overlay"></div>
+                  <!-- Slide Text Layer -->
+                  <div class="slide-text slide_style_right">
+
+</p>                  </div>
+               </div>
+            </div>
+            <!-- End of Wrapper For Slides -->
+            <a  id="accomedations"></a>
+
+            <!-- Left Control -->
+            <a class="left carousel-control" href="#bootstrap-touch-slider" role="button" data-slide="prev">
+            <span class="fa fa-angle-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+            </a>
+            <!-- Right Control -->
+            <a class="right carousel-control" href="#bootstrap-touch-slider" role="button" data-slide="next">
+            <span class="fa fa-angle-right" aria-hidden="true"></span>
+            <span  class="sr-only">Next</span>
+            </a>
+         </div>
+         <!-- End  bootstrap-touch-slider Slider -->
+
+      <!-- Container (About Section) -->
+      <div class="container-fluid"  style="
+    background-color: #e3f2fd;
+">
+         <div class="row">
+      <div class="strike" style="
+    font-style: italic;
+    font-size: 32px;
+">
+</div>
+
+ <div class="col-sm-12">
+     <h1 style="font-weight: bold; color:  #DAA520; text-align: center; padding: 20px; padding-bottom: 30px; font-size: 30px; font-style: italic;" id="welcome">Welcome to the River Edge Mansion</h1>
+     <center><h4 style="color:#B8860B; font-weight: bold;">A Bed and Breakfast in the Syracuse Region of NY on the Erie Canal.</h4></center>
+<div class="col-sm-1">
+</div>
+<div class="col-sm-1">
+<img id = "imageLogo" alt="Fleur" height="" src="img/fleurGold.gif" width="" align="left" style="
+    height: 120px;
+    width: 120px;
+    padding-right: 25px;
+    padding-bottom: 15px;
+"/>
+</div>
+<div  class="col-sm-8">
+<p style="
+font-size: 17px;
+    color: black;
+    font-weight: bold;
+">You will fall in love with this restored Greek revival mansion on the banks of the Oneida River just 12
+
+miles from Syracuse in Central New York. The 1818 Schroeppel Homestead, now known as River Edge
+
+Mansion, was home to the first school room in the area and is listed in the National Register of Historic
+
+Places. The Mansion&#39;s fascinating history includes the legend of a French princess and its builder George
+
+Casper von Schroeppel, an instrumental founder of the Erie Canal.<br>
+<br>
+This lovely old home has been restored to display its original charm and elegance and many of the
+
+original features still exist. The Mansion retains its beautiful hardwood floors, wood spindle staircases,
+
+interior window shutters and a cherry ceiling in the dining room. This nearly 200 year old structure has
+
+five marble and stone fireplaces. Pocket doors and a tin ceiling remain as do exquisite hand-carved
+
+moldings and cornices. Four beautifully appointed guestrooms furnished with fine antiques and oriental
+
+rugs will warm the hearts of the most discerning guest. This gracious bed &amp; breakfast allows you to
+
+escape from the ordinary.<br>
+<br>
+Tastefully decorated rooms create an atmosphere of elegance and refinement yet allow you to
+
+completely relax and feel right at home. Languish in a whirlpool bath, read by a marble fireplace or
+
+dream under a canopy bed. Spacious surroundings inside and out, give you an opportunity for complete
+
+privacy or gracious sharing. A private pathway leads you directly to the Oneida River where you will find
+
+private docking facilities with water and electricity hookup for boating, fishing and swimming. Dock your
+
+boat and join us for breakfast and dinner!<br>
+<br id="rooms" >
+Captain Steve will happily take you for a riverboat cruise aboard our canal boat, the Ella C. Or join us for
+
+a two and a half hour dinner cruise through Lock 23 or to the river village of Phoenix while enjoying a
+
+delicious dinner grilled on the boat.
+
+Combine all of this with fabulous gourmet breakfasts and you may never want to leave!
+
+
+<br>
+
+
+<br>
+</p>
+</div>
+ </div>
+
+ <h3 style="text-align: center; padding: 50px; color: #B8860B; font-weight: bold; font-size: 25px;" id="rooms">Accomodations</h3>
+
+<div class="col-lg-12" style="width: 100%">
+<div class="col-lg-4">
+<span class="glyphicon logo rooms" style="
+    padding-bottom: 10px;
+">
+<div id="anchor-tag">
+    <a href="imgs/newOneida1.jpg">
+        <img src="imgs/newOneida1.jpg" width="300"/>
+    </a>
+</div>
+</span>
+</div>
+<div class="col-lg-8">
+<h3 style="
+    font-style: italic;
+    font-weight: bold;
+    color: black;
+">The Oneida</h3>
+<p style=" font-weight: bold; color: black;">This enchanting room adorned with architectual detail and original modlings, comes complete with a marble fireplace, private balcony, and complimentary anemities.  Rates from $200.</p>
+<center><button type="button" id="oneida" class="btn btn-warning">Read More</button></center>
+</div>
+</div>
+<br>
+<br>
+
+
+ <div class="col-lg-12" style="width: 100%">
+ <div class="col-lg-4">
+           <span class="glyphicon logo " style="
+    padding-bottom: 10px;">
+<div id="anchor-tag2">
+    <a href="imgs/Seneca1.jpg">
+        <img src="imgs/Seneca1.jpg" width="300"/>
+    </a>
+</div>
+</span>
+</div>
+<div class="col-lg-8">
+<h3 style="
+    font-style: italic;
+    font-weight: bold;
+    color: black
+">The Seneca</h3>
+<p style=" color: black; font-weight: bold;">Experience this large, brightly colored room with a king size oak bed, decorated with oriental rugs, lovely antique furniture and fresh cut flowers for that special touch. Glance out your windows and enjoy the beautiful view, overlooking the Oneida River.  Rates from $175.</p>
+
+<center><button id="seneca" type="button" class="btn btn-warning" style="margin-top: 29px;">Read More</button></center>
+</div>
+</div>
+<br>
+<br>
+<div class="col-lg-12" style="width: 100%">
+<div class="col-lg-4">
+<span class="glyphicon logo " style="
+    padding-bottom: 10px;">
+
+<!--
+ <a data-toggle="modal" data-target="#myModal3">
+
+      <img class="example-image" src="imgs/Oswego3.jpg" alt="" align="left" style="
+     width: 300px;
+                  border: 3px solid #566E81;
+"/></a>
+-->
+<div id="anchor-tag3">
+    <a href="imgs/Oswego3.jpg">
+        <img src="imgs/Oswego3.jpg" width="300"/>
+    </a>
+</div>
+</span>
+</div>
+<div class="col-lg-8">
+<h3 style="
+    font-style: italic;
+    font-weight: bold;
+    color: black;
+">The Oswego</h3>
+<p style="color: black; font-weight: bold;">This smaller, but delightful room has a queen antique bed with a dreamy pillow top mattress. Nicely decorated with antiques, this room is perfectly priced for a spontaneous weekend getaway or for the weekday business traveler.  Rates from $150.</p>
+
+<br>
+<center><button id="oswego" type="button" class="btn btn-warning">Read More</button></center>
+</div>
+</div>
+<br>
+<br>
+</div>
+      </div>
+      <br>
+
+
+<div id="footer" class="container-fluid bg-white row" style="background-color: #e3f2fd;">
+<h3 style="text-align: center; padding: 50px; color: #B8860B; font-weight: bold; font-size: 25px;" id="rooms">Nearly 200 year old</h3>
+<!--
+<img alt="Daniel Bereza" height="" src="imgs/river2.jpg" width="" align="left"
+style="
+    height: 235px;
+    width: 300px;
+    padding-right: 25px;
+    margin: 0px 0px 0px 0px;
+    padding-bottom: 10px;
+"/>
+-->
+<div class="col-lg-12" style="width: 100%">
+<div id="anchor-tag4" class="col-lg-4">
+    <a href="imgs/river2.jpg">
+        <img class="mansion-img"src="imgs/river2.jpg" height="235" width="300" />
+    </a>
+</div>
+<div class="col-lg-8">
+    <p  style="color: black;">This <span id="services" style="color: black;">Stately</span> Greek Revival Mansion is currently listed in the National Register of Historic Places. The 4200 sq. ft. von Schroeppel Homestead has been lovingly restored in full detail. Many of the original features still exist. This nearly 200 year old structure has five marble and stone fireplaces, wood spindle staircases, pocket doors, and a tin ceiling remain as well as exquisite hand-carved moldings and cornices. This gracious bed & breakfast allows you to escape from the ordinary.
+    <br id="services"><br>
+    Tastefully decorated rooms create an atmosphere of elegance and refinement yet allow you to completely relax and feel right at home. Languish in a whirlpool bath, read by a marble fireplace or dream under a canopy bed. Spacious surroundings inside and out, give you an opportunity for complete privacy or gracious sharing. A private pathway leads you directly to the Oneida River where you will find New private docking facilities for boating, fishing and swimming.  </p>
+</div>
+</div>
+</div>
+
+<style media="screen">
+#anchor-tag3 img, #anchor-tag2 img, #anchor-tag img, .mansion-img{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+
+}
+</style>
+
+
+<div id="footer" class="container-fluid bg-white" style="background-color: #e3f2fd;">
+
+<center>
+   <span class="glyphicon logo slideanim slide">
+   <img id = "imageLogo" alt="Fleur" height="" src="img/fleurGold.gif" width="" style="
+    height: 75px;"/>
+   </span>
+</center>
+
+<h3 style="font-weight: bold; color: #B8860B; text-align: center; padding: 20px; font-size: 25px;">Reservations</h3>
+<div class="col-lg-12" style="width: 100%">
+<div class="col-lg-2">
+</div>
+<div class="col-lg-8">
+<ul style="color: black; list-style-type: square; font-weight: bold; font-size: 18px;">
+   <li>A 50% major credit card deposit secures reservation - made at time of reservation, on-line or by phone.</li>
+   <li>The remainder of your room charges, along with applicable sales tax, will be due upon check-out</li>
+   <li>Check-out is between 11:00 am and noon</li>
+   <li>Check-in 3:00 pm - 8:00 pm unless otherwise arranged</li>
+   <li>A late check-out can be arranged for an additional fee</li>
+   <li>Smoking is limited to porches and grounds</li>
+   <li>Gift Certificates are available</li>
+   <li>We accept cash, VISA, MasterCard, American Express or Discover</li>
+   <li>Taxes are 12% (8% State and County + 4% Tourism Tax)</li>
+</ul>
+</div>
+<br>
+<div class="col-lg-2">
+</div>
+</div>
+<center>
+<span  class="glyphicon logo slideanim slide"><img id = "imageLogo" alt="Fleur" height="" src="img/fleurGold.gif" width="" style="
+    height: 75px;
+"/></span></center>
+
+<h3 style="font-weight: bold; color: #B8860B; text-align: center; padding: 20px;" id="policies">Cancellation Policy</h3>
+<div class="col-lg-12" style="width: 100%">
+<div class="col-lg-2">
+</div>
+<div class="col-lg-8">
+<p  style="
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+">Notice of cancellation must be received 10 days prior to arrival
+
+date. If you cancel within 10 days, or fail to arrive, you will be charged for the entire amount
+
+due, however if the room is re-booked, the charges will be refunded less a $50 cancellation fee.
+
+The earlier you cancel, the better our chance of rebooking the room.
+<br>
+</p>
+</div>
+<div class="col-lg-2">
+</div>
+</div>
+<center>
+<span  class="glyphicon logo slideanim slide"><img id = "imageLogo" alt="Fleur" height="" src="img/fleurGold.gif" width="" style="
+    height: 75px;
+"/></span></center>
+<h3 style="font-weight: bold; color: #B8860B; text-align: center; padding: 25px;">Privacy Policy</h3>
+<div class="col-sm-12">
+<div class="col-sm-2">
+</div>
+<div class="col-sm-8">
+<p id="policies" style="
+    color: black;
+    font-weight: bold;
+    font-size: 17px;
+">At River Edge Mansion Bed & Breakfast we are dedicated to protecting your privacy and safeguarding your personally identifiable information.
+
+<br><br>
+
+<b style="color: #B8860B; font-weight: bold; font-size: 18px;">Information Collection</b><br>
+Our main purpose in collecting your personal information is to provide you with a streamlined experience in making reservations at River Edge Mansion Bed & Breakfast We only collect information about you that we consider necessary for achieving this. Personally identifiable information is only obtained when making a reservation.
+
+<br><br>
+<b style="color: #B8860B; font-weight: bold; font-size: 18px;">Security</b><br>
+At River Edge Mansion Bed & Breakfast we take security seriously. When users make a reservation we use every precaution to safe guard it online and offline.
+
+<br><br>
+<b style="color: #B8860B; font-weight: bold; font-size: 18px;">Policy Modifications</b><br>
+River Edge Mansion Bed & Breakfast may amend this Privacy Statement from time to time in order to meet changes in the regulatory environment, business needs, or to satisfy the needs of our guests, properties, strategic marketing partners, and service providers.
+<br><br>
+<b style="color: #B8860B; font-weight: bold; font-size: 18px;">Gift Certificates</b><br>
+A gift certificate is always a welcome gift. We can design a gift certificate for a dollar amount of your choice, for example, "$100 Towards Your Stay at River Edge Mansion", or choose a room you like, such as "A Weekend Stay in the Seneca room". Gift certificates are good from one year from the last day of the month they are purchased. We accept Visa, Mastercard, Discover, American Express, check and cash for purchase of gift certificates. Call us at <a href = "tel:315-695-3021">315-695-3021</a> or email us at <a href = "mailto:riveredgemansion@gmail.com">riveredgemansion@gmail.com</a> to order a gift certificate today.  Gift certificates are not refundable and cannot be redeemed or exchanged for cash.  Any additional cost exceeding the value of the certificate is to be paid by the redeemer.  Contact the Innkeeper for reservations.
+<br><br>
+</p>
+</div>
+</div>
+<center>
+<span  class="glyphicon logo slideanim slide"><img id = "imageLogo" alt="Fleur" height="" src="img/fleurGold.gif" width="" style="
+    height: 75px;
+"/></span></center>
+<h3 id="specials" style="font-weight: bold; color: #B8860B; text-align: center; padding: 20px;">Specials</h3>
+<div class="col-lg-12" style="width: 100%">
+<div class="col-lg-2">
+</div>
+<div class="col-lg-8">
+<p style="
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 20px;
+">Newlywed's Special: Spend a blissful first night of your marriage at River Edge Mansion and begin the first day of your married life with a candlelit breakfast... or enjoy a romantic breakfast in your room or on your private balcony or porch. You'll find chilled Champagne and flowers in your room for no
+extra charge.
+</p>
+</div>
+<div class="col-lg-2">
+</div>
+</div>
+
+<div class="col-lg-12" style="width: 100%">
+    <div class="col-lg-12" style="font-weight: bold; font-size: 18px;">
+        <h4 style="font-weight: bold; border-bottom: 3px solid #B8860B; text-align: center; font-size: 23px; border-bottom: 3px solid #B8860B; width: 60%; margin-left: 18%;">Cooking Instructions</h4>
+        <div class="col-lg-2">
+        </div>
+        <div class="col-lg-8">
+        <p>&nbsp;Want to join in on the cooking fun? River Edge hosts invite you to join them in the kitchen while they prepare your evening meal. Be prepared to lend a hand and learn some tricks of the trade.
+        </p>
+        <p>&nbsp;Options include pairing wine with foods, making sushi, baking bread, gingerbread house making and cooking with herbs from the Mansion garden. Or come up with your own idea. The cost is $125 per couple and includes dinner.</p>
+        </div>
+        <div class="col-lg-2">
+        </div>
+    </div>
+    <div class="col-lg-12" style="font-weight: bold; font-size: 18px;">
+        <h4 style="font-weight: bold; border-bottom: 3px solid #B8860B; text-align: center; font-size: 23px; border-bottom: 3px solid #B8860B; width: 63%; margin-left: 18%;">In-Room Massage</h4>
+        <div class="col-lg-2">
+        </div>
+        <div class="col-lg-8">
+        <p>&nbsp;Ask us about a relaxing in-room massage. Let us know when making your reservation that you'd like a massage during your stay.</p>
+        <p>&nbsp;Ask about a Reiki session! Also, Ask us about dinner recommendations... or have dinner at the B&amp;B. If you are interested in Dinner at the Mansion give us a call.</p>
+        </div>
+        <div class="col-lg-2">
+        </div>
+    </div>
+</div>
+<div class="col-lg-12" style="font-weight: bold; width: 100%; font-size: 18px; text-align: center;">
+<h4 style="font-weight: bold; border-bottom: 3px solid #B8860B; width: 66%; margin-left: 17%; text-align: center; font-size: 23px; ">A Culinary Weekend includes:</h4>
+<p>Two nights at River Edge Mansion Bed & Breakfast Champagne or wine reception Friday evening.</p>
+<p>Limo Ride to Mohegan Manor Restaurant</p>
+<p><a href = "http://www.moheganmanor.com/" target="_blank" style="color: #B8860B; font-weight: bold;"> www.moheganmanor.com</a></p>
+<p>Dinner at Mohegan Manor</p>
+<p>Breakfast Saturday morning</p>
+<p>Visit to the Regional Farmers Market in Syracuse Saturday morning to source dinner ingredients</p>
+<p>Pre-dinner gathering with wine late Saturday afternoon</p>
+<p>Hands on dinner preparation</p>
+<p>Dinner</p>
+<p>Embroidered apron</p>
+<p>Farm to table breakfast Sunday morning</p>
+<p>Gather together a group of your friends and reserve a culinary weekend today!</p>
+<p>Each weekend class will be limited to 3 couples.</p>
+<p>The cost including two nights lodging at River Edge Mansion, meals, hands-on cooking lessons
+<br>and A visit to the Regional Market, is $750 including taxes.</p>
+<p>Can be Saturday and Sundays if a long weekend</p>
+</div>
+</div>
+
+<center style=" background-color: #e3f2fd;">
+<span class="glyphicon logo slideanim slide"><img id = "imageLogo" alt="Daniel Bereza" height="" src="img/fleurGold.gif" width="" style="
+    height: 75px;
+    margin-top: 20px;
+"/></span></center>
+
+      <!--
+         <!-- Add Google Maps -->
+
+      <script>
+         function myMap() {
+
+         var myCenter = new google.maps.LatLng(43.205745, -76.217674);
+
+         var mapProp = {center:myCenter, zoom:15, scrollwheel:false, draggable:true, mapTypeId:google.maps.MapTypeId.ROADMAP};
+
+         var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+         var marker = new google.maps.Marker({position:myCenter});
+         marker.setMap(map);
+
+         }
+
+      </script>
+
+
+
+
+
+
+
+<!-- Container (Contact Section) -->
+
+      <div id="contact" class="container-fluid bg-grey" style="
+    background-color: #e3f2fd;
+">
+<h3 style="font-weight: bold; color: #B8860B; text-align: center; padding: 20px; font-size: 25px;">Contact Us</h3>
+
+
+
+<br>
+
+         <div class="row" style="width: 100%">
+            <div class="col-lg-7">
+               <div id="googleMap" style="height:400px;width:100%;"></div>
+                  <div id="TA_cdsscrollingravenarrow343" class="TA_cdsscrollingravenarrow">
+                     <div id="CDSSCROLLINGRAVE" class="white   border   narrow ">
+                        <marquee behavior="scroll" scrollamount="3" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
+                        </marquee>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-5 slideanim slide" style="margin: 0px 0px 10px;">
+               <p style="margin: 0 0 -2px; color: black; font-weight: bold;">Feel free to check online for availability and call us if you have any questions regarding event hosting or arrangement groups.  We will be happy to assist you in any way.</p>
+               <p style=" margin: 0 0 -2px; color: black; font-weight: bold; "><span class="glyphicon glyphicon-map-marker" style="color: #B8860B;"></span> 1 County Route Route 10, Pennellville, NY 13132</p>
+      <p style="
+    margin: 0 0 -2px;
+    color: black;
+    font-weight: bold;
+"><span class="glyphicon glyphicon-phone" style="
+    color: #B8860B;
+"></span> 315 - 695 - 3021</p>
+
+      <a href="www.riveredgemansion.com" style="
+    margin: 0 0 -2px;
+    color: black;
+    font-weight: bold;
+"><p style="
+    margin: 0 0 -2px;
+"><span class="glyphicon glyphicon-globe"></span> www.riveredgemansion.com</p></a>
+
+                     <!-- A php form that will send an email to the owner and at the same time store contact information in a sql table backend once connected-->
+
+                     <form action="/scripts/sqlForm.php" method="post" style="
+    margin: 0 0 -2px;
+    color: black;
+    font-weight: black;
+">
+                        First Name: <input class="form-control" id="formFirst" type="text" name="formFirst" placeholder="Your name" required="" style="
+    margin: 0 0 -4px;
+    color: black;
+    font-weight: black;
+">
+Email: <input class="form-control" id="formEmail" type="text" name="formEmail" placeholder="Your Email" required="" style="
+color: black;
+font-weight: black;
+">
+Message:<br><textarea class="form-control" rows="4" name="formMessage" cols="30" placeholder="Write down your message"></textarea><br>
+
+
+<input type="submit" name="formSubmit" value="Send" class="btn btn-warning" style="
+float: right;
+">
+                  </form>
+      </div>
+
+
+<div id="footer" class="container-fluid bg-white" style="
+background-color: #e3f2fd;
+">
+
+
+
+<a href="#bootstrap-touch-slider">
+<center><button type="button" class="btn btn-warning">Back to Top</button></center></a>
+
+<br>
+
+<center><p style="color: black; font-weight: bold;">&copy; 2017 River Edge Bed and Breakfast </p></center>
+</div>
+
+
+
+
+
+
+
+      <!--AIzaSyC9zesoTGK5Ra_73PJMuLefHGJ-fKCQFVk-->
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9zesoTGK5Ra_73PJMuLefHGJ-fKCQFVk&callback=myMap"></script>
+      <footer class="container-fluid text-center" style="
+    background-color: #e3f2fd;
+">
+         <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', '#', 'auto');
+            ga('send', 'pageview');
+
+         </script>
+      </footer>
+
+
+      <script>
+         $(document).ready(function(){
+             $('#anchor-tag').lightGallery();
+             $('#anchor-tag2').lightGallery();
+             $('#anchor-tag3').lightGallery();
+             $('#anchor-tag4').lightGallery();
+
+
+
+
+                 $('#seneca').click(function(){
+
+                     window.location='rooms.html#seneca';
+                 });
+
+                 $('#oneida').click(function(){
+
+                     window.location='rooms.html#oneida';
+                 });
+
+                 $('#oswego').click(function(){
+
+                     window.location='rooms.html#oswego';
+                 });
+
+           // Add smooth scrolling to all links
+           $("a").on('click', function(event) {
+
+             // Make sure this.hash has a value before overriding default behavior
+             if (this.hash !== "") {
+
+               // Prevent default anchor click behavior
+               event.preventDefault();
+
+               // Store hash
+               var hash = this.hash;
+
+               // Using jQuery's animate() method to add smooth page scroll
+
+               // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+               $('html, body').animate({
+                 scrollTop: $(hash).offset().top
+               }, 900, function(){
+
+                 // Add hash (#) to URL when done scrolling (default click behavior)
+                 window.location.hash = hash;
+               });
+             } // End if
+           });
+
+           $(window).scroll(function() {
+             $(".slideanim").each(function(){
+
+               var pos = $(this).offset().top;
+
+               var winTop = $(window).scrollTop();
+
+                 if (pos < winTop + 600) {
+                   $(this).addClass("slide");
+                 }
+             });
+           });
+         })
+      </script>
+
+   </body>
+</html>

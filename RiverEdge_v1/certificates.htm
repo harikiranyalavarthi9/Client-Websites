@@ -1,0 +1,1748 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+      <title>Gift Certificates | River Edge Mansion </title>
+      <meta content="Syracuse, New York B&B, River Edge Mansion Bed and Breakfast, Erie Canal  lodging, NY Inn is located near Destiny USA in Central New York between the Finger Lakes and the Adirondack Regions of NY. " name="description" />
+      <meta content="River Edge Mansion, Pennellville NY, Weddings, B & B Services, Accommodations, Private Docking, Destiny USA" name="keywords" />
+      <meta content="Daniel Bereza" name="author" />
+      <meta content="width=device-width, initial-scale=1" name="viewport" />
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" media="all">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" media="all">
+      <link rel="stylesheet" type="text/css" href="styles/main.css" />
+      <script type="text/javascript" src="js/jquery.js"></script>
+      <script src="js/Carousel.js"></script>
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css" />
+      <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css" />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <link href="http://vjs.zencdn.net/5.8.8/video-js.css" rel="stylesheet" />
+      <!-- If you'd like to support IE8 -->
+      <script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+      <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+      <link rel="stylesheet" href="/resources/demos/style.css">
+      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+      <link rel="shortcut icon" href="img/logo.png">
+         <style type="text/css">
+         /*
+         Body color scheme:  #e3f2fd
+         Gold Color: #DAA520
+         Darker Gold: #B8860B
+         grey: #eeeeee;
+         navy: #566E81;
+    */
+
+        body{
+            background-color: #e3f2fd;
+        }
+         #dialog-overlay {
+         /* set it to fill the whil screen */
+         width:100%;
+         height:100%;
+         /* transparency for different browsers */
+         filter:alpha(opacity=50);
+         -moz-opacity:0.5;
+         -khtml-opacity: 0.5;
+         opacity: 0.5;
+         background:#000;
+         /* make sure it appear behind the dialog box but above everything else */
+         position:absolute;
+         top:0; left:0;
+         z-index:3000;
+         /* hide it by default */
+         display:none;
+         }
+         #dialog-box {
+         /* css3 drop shadow */
+         -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+         -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+         /* css3 border radius */
+         -moz-border-radius: 5px;
+         -webkit-border-radius: 5px;
+         background:#eee;
+         /* styling of the dialog box, i have a fixed dimension for this demo */
+         width:328px;
+         /* make sure it has the highest z-index */
+         position:absolute;
+         z-index:5000;
+         /* hide it by default */
+         display:none;
+         }
+         #dialog-box .dialog-content {
+         /* style the content */
+         text-align:left;
+         padding:10px;
+         margin:13px;
+         color:#666;
+         font-family:arial;
+         font-size:11px;
+         }
+         a.button {
+         /* styles for button */
+         margin:10px auto 0 auto;
+         text-align:center;
+         background-color: #e33100;
+         display: block;
+         width:50px;
+         padding: 5px 10px 6px;
+         color: #fff;
+         text-decoration: none;
+         font-weight: bold;
+         line-height: 1;
+         /* css3 implementation :) */
+         -moz-border-radius: 5px;
+         -webkit-border-radius: 5px;
+         -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+         -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+         text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+         border-bottom: 1px solid rgba(0,0,0,0.25);
+         position: relative;
+         cursor: pointer;
+         }
+         a.button:hover {
+         background-color: #c33100;
+         }
+         /* extra styling */
+         #dialog-box .dialog-content p {
+         font-weight:700; margin:0;
+         }
+         #dialog-box .dialog-content ul {
+         margin:10px 0 10px 20px;
+         padding:0;
+         height:50px;
+         }
+         body {
+         font: 400 15px Lato, sans-serif;
+         line-height: 1.8;
+         color: #818181;
+         }
+         h2 {
+         font-size: 24px;
+         text-transform: uppercase;
+         color: #303030;
+         font-weight: 600;
+         margin-bottom: 30px;
+         }
+         h4 {
+         font-size: 19px;
+         line-height: 1.375em;
+         color: #303030;
+         font-weight: 400;
+         margin-bottom: 30px;
+         }
+         .jumbotron {
+         background-color: steelblue;
+         color: #fff;
+         padding-top: 70px;
+         font-family: Montserrat, sans-serif;
+         }
+         .container-fluid {
+         padding: 15px 50px;
+         }
+         .bg-grey {
+          /*background-color: #B4D4E7;*/
+         background-color: #eeeeee;
+         }
+         .logo-small {
+         color: #f4511e;
+         font-size: 50px;
+         }
+         .thumbnail {
+         padding: 0 0 15px 0;
+         border: none;
+         border-radius: 0;
+         }
+         .thumbnail img {
+         width: 100%;
+         height: 100%;
+         margin-bottom: 10px;
+         }
+         .carousel-control.right, .carousel-control.left {
+         background-image: none;
+         color: #f4511e;
+         }
+         .carousel-indicators li {
+         border-color: #f4511e;
+         }
+         .carousel-indicators li.active {
+         background-color: #f4511e;
+         }
+         .item h4 {
+         font-size: 19px;
+         line-height: 1.375em;
+         font-weight: 400;
+         font-style: italic;
+         margin: 70px 0;
+         }
+         .item span {
+         font-style: normal;
+         }
+         .panel {
+         border: 1px solid #f4511e;
+         border-radius:0 !important;
+         transition: box-shadow 0.5s;
+         }
+         .panel:hover {
+         box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+         }
+         .panel-footer .btn:hover {
+         border: 1px solid #f4511e;
+         background-color: #fff !important;
+         color: #f4511e;
+         }
+         .panel-heading {
+         color: #fff !important;
+         background-color: #f4511e !important;
+         padding: 25px;
+         border-bottom: 1px solid transparent;
+         border-top-left-radius: 0px;
+         border-top-right-radius: 0px;
+         border-bottom-left-radius: 0px;
+         border-bottom-right-radius: 0px;
+         }
+         .panel-footer {
+         background-color: white !important;
+         }
+         .panel-footer h3 {
+         font-size: 32px;
+         }
+         .panel-footer h4 {
+         color: #aaa;
+         font-size: 14px;
+         }
+         .panel-footer .btn {
+         margin: 15px 0;
+         background-color: #f4511e;
+         color: #fff;
+         }
+         .navbar {
+         margin-bottom: 0;
+        /* background-color: #B4D4E7;*/
+         background-color: #eeeeee;
+         z-index: 9999;
+         border: 0;
+         font-size: 12px !important;
+         line-height: 1.42857143 !important;
+         letter-spacing: 4px;
+         border-radius: 0;
+         font-family: Montserrat, sans-serif;
+         }
+
+         .navbar li a, .navbar .navbar-brand {
+         color: #566E81 !important;
+         font-weight: bold;
+         }
+
+         .navbar-nav li a:hover{
+             /* gold hover color for links in navbar */
+            color: #DAA520 !important;
+            /*color: #f4511e !important;*/
+            background-color: #e7e7e7;
+         }
+
+         /*
+         .navbar-nav li.active a{
+            color: #DAA520 !important;
+
+         }
+         */
+         .navbar-default .navbar-toggle {
+         border-color: transparent;
+         color: #fff !important;
+         }
+
+         footer .glyphicon {
+         font-size: 20px;
+         margin-bottom: 20px;
+         color: #f4511e;
+         }
+         .slideanim {visibility:hidden;}
+         .slide {
+         animation-name: slide;
+         -webkit-animation-name: slide;
+         animation-duration: 1s;
+         -webkit-animation-duration: 1s;
+         visibility: visible;
+         }
+         @keyframes slide {
+         0% {
+         opacity: 0;
+         transform: translateY(70%);
+         }
+         100% {
+         opacity: 1;
+         transform: translateY(0%);
+         }
+         }
+         @-webkit-keyframes slide {
+         0% {
+         opacity: 0;
+         -webkit-transform: translateY(70%);
+         }
+         100% {
+         opacity: 1;
+         -webkit-transform: translateY(0%);
+         }
+         }
+         @media screen and (max-width: 768px) {
+         .col-sm-4 {
+         text-align: center;
+         margin: 25px 0;
+         }
+         .btn-lg {
+         width: 100%;
+         margin-bottom: 35px;
+         }
+         }
+         @media screen and (max-width: 480px) {
+         .logo {
+         font-size: 150px;
+         }
+         }
+         @media (min-width: 768px)
+         .col-sm-6 {
+         width: 91%;
+         }
+         .hovereffect {
+         width:100%;
+         height:100%;
+         float:left;
+         overflow:hidden;
+         position:relative;
+         text-align:center;
+         cursor:default;
+         }
+         .hovereffect .overlay {
+         border: 5px groove;
+         width:100%;
+         height:100%;
+         position:absolute;
+         overflow:hidden;
+         top:0;
+         left:0;
+         opacity:0;
+         background-color:rgba(0,0,0,0.5);
+         -webkit-transition:all .4s ease-in-out;
+         transition:all .4s ease-in-out
+         }
+         .hovereffect img {
+         display:block;
+         position:relative;
+         -webkit-transition:all .4s linear;
+         transition:all .4s linear;
+         }
+         .hovereffect h2 {
+         text-transform:uppercase;
+         color:#fff;
+         text-align:center;
+         position:relative;
+         font-size:17px;
+         background:rgba(0,0,0,0.6);
+         -webkit-transform:translatey(-100px);
+         -ms-transform:translatey(-100px);
+         transform:translatey(-100px);
+         -webkit-transition:all .2s ease-in-out;
+         transition:all .2s ease-in-out;
+         padding:10px;
+         }
+         .hovereffect a.info {
+         text-decoration:none;
+         display:inline-block;
+         text-transform:uppercase;
+         color:#fff;
+         border:1px solid #fff;
+         background-color:transparent;
+         opacity:0;
+         filter:alpha(opacity=0);
+         -webkit-transition:all .2s ease-in-out;
+         transition:all .2s ease-in-out;
+         margin:50px 0 0;
+         padding:7px 14px;
+         }
+         .hovereffect a.info:hover {
+         box-shadow:0 0 5px #fff;
+         }
+         .hovereffect:hover img {
+         -ms-transform:scale(1.2);
+         -webkit-transform:scale(1.2);
+         transform:scale(1.2);
+         }
+         .hovereffect:hover .overlay {
+         opacity:1;
+         filter:alpha(opacity=100);
+         }
+         .hovereffect:hover h2,.hovereffect:hover a.info {
+         opacity:1;
+         filter:alpha(opacity=100);
+         -ms-transform:translatey(0);
+         -webkit-transform:translatey(0);
+         transform:translatey(0);
+         }
+         .hovereffect:hover a.info {
+         -webkit-transition-delay:.2s;
+         transition-delay:.2s;
+         }
+         .container1 {
+         //margin-bottom: 20px;
+         //padding-bottom: 50px;
+         }
+         /*=========================
+         Icons
+         ================= */
+         /* footer social icons */
+         ul.social-network {
+         list-style: none;
+         display: inline;
+         margin-left:0 !important;
+         padding: 0;
+         }
+         ul.social-network li {
+         display: inline;
+         margin: 0 5px;
+         }
+         /* footer social icons */
+         .social-network a.icoRss:hover {
+         background-color: #F56505;
+         }
+         .social-network a.icoFacebook:hover {
+         background-color:#3B5998;
+         }
+         .social-network a.icoTwitter:hover {
+         background-color:#33ccff;
+         }
+         .social-network a.icoGoogle:hover {
+         background-color:#BD3518;
+         }
+         .social-network a.icoVimeo:hover {
+         background-color:#0590B8;
+         }
+         .social-network a.icoLinkedin:hover {
+         background-color:#007bb7;
+         }
+         .social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
+         .social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
+         color:#fff;
+         }
+         a.socialIcon:hover, .socialHoverClass {
+         color:#44BCDD;
+         }
+         .social-circle li a {
+         display:inline-block;
+         position:relative;
+         margin:0 auto 0 auto;
+         -moz-border-radius:50%;
+         -webkit-border-radius:50%;
+         border-radius:50%;
+         text-align:center;
+         width: 50px;
+         height: 50px;
+         font-size:20px;
+         }
+         .social-circle li i {
+         margin:0;
+         line-height:50px;
+         text-align: center;
+         }
+         .social-circle li a:hover i, .triggeredHover {
+         -moz-transform: rotate(360deg);
+         -webkit-transform: rotate(360deg);
+         -ms--transform: rotate(360deg);
+         transform: rotate(360deg);
+         -webkit-transition: all 0.2s;
+         -moz-transition: all 0.2s;
+         -o-transition: all 0.2s;
+         -ms-transition: all 0.2s;
+         transition: all 0.2s;
+         }
+         .social-circle i {
+         color: #fff;
+         -webkit-transition: all 0.8s;
+         -moz-transition: all 0.8s;
+         -o-transition: all 0.8s;
+         -ms-transition: all 0.8s;
+         transition: all 0.8s;
+         }
+         a {
+         background-color: none;
+         }
+         #boxshadow {
+         position: relative;
+         -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0,0.5);
+         -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+         box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+         padding: 10px;
+         background: white;
+         }
+         /* Make the image fit the box */
+         #boxshadow img {
+         width: 100%;
+         border: 1px solid #8a4419;
+         border-style: inset;
+         height: 50%
+         }
+         #boxshadow::after {
+         content: '';
+         position: absolute;
+         z-index: -1; /* hide shadow behind image */
+         -webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+         -moz-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+         box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+         width: 70%;
+         left: 15%; /* one half of the remaining 30% */
+         height: 100px;
+         bottom: 0;
+         }
+         .bs-slider{
+         overflow: hidden;
+         max-height: 700px;
+         position: relative;
+         background: #000000;
+         }
+         .bs-slider:hover {
+         cursor: -moz-grab;
+         cursor: -webkit-grab;
+         }
+         .bs-slider:active {
+         cursor: -moz-grabbing;
+         cursor: -webkit-grabbing;
+         }
+         .bs-slider .bs-slider-overlay {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background-color: rgba(0, 0, 0, 0.40);
+         }
+         .bs-slider > .carousel-inner > .item > img,
+         .bs-slider > .carousel-inner > .item > a > img {
+         margin: auto;
+         width: 100% !important;
+         }
+         /********************
+         *****Slide effect
+         **********************/
+         .fade {
+         opacity: 1;
+         }
+         .fade .item {
+         top: 0;
+         z-index: 1;
+         opacity: 0;
+         width: 100%;
+         position: absolute;
+         left: 0 !important;
+         display: block !important;
+         -webkit-transition: opacity ease-in-out 1s;
+         -moz-transition: opacity ease-in-out 1s;
+         -ms-transition: opacity ease-in-out 1s;
+         -o-transition: opacity ease-in-out 1s;
+         transition: opacity ease-in-out 1s;
+         }
+         .fade .item:first-child {
+         top: auto;
+         position: relative;
+         }
+         .fade .item.active {
+         opacity: 1;
+         z-index: 2;
+         -webkit-transition: opacity ease-in-out 1s;
+         -moz-transition: opacity ease-in-out 1s;
+         -ms-transition: opacity ease-in-out 1s;
+         -o-transition: opacity ease-in-out 1s;
+         transition: opacity ease-in-out 1s;
+         }
+         /*---------- LEFT/RIGHT ROUND CONTROL ----------*/
+         .control-round .carousel-control {
+         top: 47%;
+         opacity: 0;
+         width: 45px;
+         height: 45px;
+         z-index: 100;
+         color: #ffffff;
+         display: block;
+         font-size: 24px;
+         cursor: pointer;
+         overflow: hidden;
+         line-height: 43px;
+         text-shadow: none;
+         position: absolute;
+         font-weight: normal;
+         background: transparent;
+         -webkit-border-radius: 100px;
+         border-radius: 100px;
+         }
+         .control-round:hover .carousel-control{
+         opacity: 1;
+         }
+         .control-round .carousel-control.left {
+         left: 1%;
+         }
+         .control-round .carousel-control.right {
+         right: 1%;
+         }
+         .control-round .carousel-control.left:hover,
+         .control-round .carousel-control.right:hover{
+         color: #fdfdfd;
+         background: rgba(0, 0, 0, 0.5);
+         border: 0px transparent;
+         }
+         .control-round .carousel-control.left>span:nth-child(1){
+         left: 45%;
+         }
+         .control-round .carousel-control.right>span:nth-child(1){
+         right: 45%;
+         }
+         /*---------- INDICATORS CONTROL ----------*/
+         .indicators-line > .carousel-indicators{
+         right: 45%;
+         bottom: 3%;
+         left: auto;
+         width: 90%;
+         height: 20px;
+         font-size: 0;
+         overflow-x: auto;
+         text-align: right;
+         overflow-y: hidden;
+         padding-left: 10px;
+         padding-right: 10px;
+         padding-top: 1px;
+         white-space: nowrap;
+         }
+         .indicators-line > .carousel-indicators li{
+         padding: 0;
+         width: 15px;
+         height: 15px;
+         border: 1px solid rgb(158, 158, 158);
+         text-indent: 0;
+         overflow: hidden;
+         text-align: left;
+         position: relative;
+         letter-spacing: 1px;
+         background: rgb(158, 158, 158);
+         -webkit-font-smoothing: antialiased;
+         -webkit-border-radius: 50%;
+         border-radius: 50%;
+         margin-right: 5px;
+         -webkit-transition: all 0.5s cubic-bezier(0.22,0.81,0.01,0.99);
+         transition: all 0.5s cubic-bezier(0.22,0.81,0.01,0.99);
+         z-index: 10;
+         cursor:pointer;
+         }
+         .indicators-line > .carousel-indicators li:last-child{
+         margin-right: 0;
+         }
+         .indicators-line > .carousel-indicators .active{
+         margin: 1px 5px 1px 1px;
+         box-shadow: 0 0 0 2px #fff;
+         background-color: transparent;
+         position: relative;
+         -webkit-transition: box-shadow 0.3s ease;
+         -moz-transition: box-shadow 0.3s ease;
+         -o-transition: box-shadow 0.3s ease;
+         transition: box-shadow 0.3s ease;
+         -webkit-transition: background-color 0.3s ease;
+         -moz-transition: background-color 0.3s ease;
+         -o-transition: background-color 0.3s ease;
+         transition: background-color 0.3s ease;
+         }
+         .indicators-line > .carousel-indicators .active:before{
+         transform: scale(0.5);
+         background-color: #fff;
+         content:"";
+         position: absolute;
+         left:-1px;
+         top:-1px;
+         width:15px;
+         height: 15px;
+         border-radius: 50%;
+         -webkit-transition: background-color 0.3s ease;
+         -moz-transition: background-color 0.3s ease;
+         -o-transition: background-color 0.3s ease;
+         transition: background-color 0.3s ease;
+         }
+         /*---------- SLIDE CAPTION ----------*/
+         .slide_style_left {
+         text-align: left !important;
+         }
+         .slide_style_right {
+         text-align: right !important;
+         }
+         .slide_style_center {
+         text-align: center !important;
+         }
+         .slide-text {
+         left: 0;
+         top: 25%;
+         right: 0;
+         margin: auto;
+         padding: 10px;
+         position: absolute;
+         text-align: left;
+         padding: 10px 85px;
+         }
+         .slide-text > h1 {
+         padding: 0;
+         color: #ffffff;
+         font-size: 70px;
+         font-style: normal;
+         line-height: 84px;
+         margin-bottom: 30px;
+         letter-spacing: 1px;
+         display: inline-block;
+         -webkit-animation-delay: 0.7s;
+         animation-delay: 0.7s;
+         }
+         .slide-text > p {
+         padding: 0;
+         color: #ffffff;
+         font-size: 20px;
+         line-height: 24px;
+         font-weight: 300;
+         margin-bottom: 40px;
+         letter-spacing: 1px;
+         -webkit-animation-delay: 1.1s;
+         animation-delay: 1.1s;
+         }
+         .slide-text > a.btn-default{
+         color: #000;
+         font-weight: 400;
+         font-size: 13px;
+         line-height: 15px;
+         margin-right: 10px;
+         text-align: center;
+         padding: 17px 30px;
+         white-space: nowrap;
+         letter-spacing: 1px;
+         display: inline-block;
+         border: none;
+         text-transform: uppercase;
+         -webkit-animation-delay: 2s;
+         animation-delay: 2s;
+         -webkit-transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+         transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+         }
+         .slide-text > a.btn-primary{
+         color: #ffffff;
+         cursor: pointer;
+         font-weight: 400;
+         font-size: 13px;
+         line-height: 15px;
+         margin-left: 10px;
+         text-align: center;
+         padding: 17px 30px;
+         white-space: nowrap;
+         letter-spacing: 1px;
+         background: #00bfff;
+         display: inline-block;
+         text-decoration: none;
+         text-transform: uppercase;
+         border: none;
+         -webkit-animation-delay: 2s;
+         animation-delay: 2s;
+         -webkit-transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+         transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+         }
+         .slide-text > a:hover,
+         .slide-text > a:active {
+         color: #ffffff;
+         background: #222222;
+         -webkit-transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+         transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+         }
+         /*------------------------------------------------------*/
+         /* RESPONSIVE
+         /*------------------------------------------------------*/
+         @media (max-width: 991px) {
+         .slide-text h1 {
+         font-size: 40px;
+         line-height: 50px;
+         margin-bottom: 20px;
+         }
+         .slide-text > p {
+         font-size: 18px;
+         }
+         }
+         /*---------- MEDIA 480px ----------*/
+         @media  (max-width: 768px) {
+         .slide-text {
+         padding: 10px 50px;
+         }
+         .slide-text h1 {
+         font-size: 30px;
+         line-height: 40px;
+         margin-bottom: 10px;
+         }
+         .slide-text > p {
+         font-size: 14px;
+         line-height: 20px;
+         margin-bottom: 20px;
+         }
+         .control-round .carousel-control{
+         display: none;
+         }
+         }
+         @media  (max-width: 480px) {
+         .slide-text {
+         padding: 10px 30px;
+         }
+         .slide-text h1 {
+         font-size: 20px;
+         line-height: 25px;
+         margin-bottom: 5px;
+         }
+         .slide-text > p {
+         font-size: 12px;
+         line-height: 18px;
+         margin-bottom: 10px;
+         }
+         .slide-text > a.btn-default,
+         .slide-text > a.btn-primary {
+         font-size: 10px;
+         line-height: 10px;
+         margin-right: 10px;
+         text-align: center;
+         padding: 10px 15px;
+         }
+         .indicators-line > .carousel-indicators{
+         display: none;
+         }
+         }
+         <!--
+            @media (min-width: 768px) and  (max-width: 2000px){
+              .over{
+               width: 170%;
+              }
+            }
+            -->
+         .over{
+         width: 100%;
+         }
+         .video-section .pattern-overlay {
+         //background-color: rgba(71, 71, 71, 0.59);
+         padding: 17px 0 32px;
+         min-height: 290px;
+         /* Incase of overlay problems just increase the min-height*/
+         }
+         .video-section h1, .video-section h3{
+         text-align:center;
+         color:#fff;
+         }
+         .video-section h1{
+         font-size:60px;
+         font-family: 'Buenard', serif;
+         font-weight:bold;
+         text-transform: uppercase;
+         margin: 40px auto 0px;
+         text-shadow: 1px 1px 1px #000;
+         -webkit-text-shadow: 1px 1px 1px #000;
+         -moz-text-shadow: 1px 1px 1px #000;
+         }
+         .video-section h3{
+         font-size: 25px;
+         font-weight:lighter;
+         margin: 0px auto 15px;
+         }
+         .video-section .buttonBar{display:none;}
+         .player {font-size: 1px;}
+
+
+
+.strike {
+    display: block;
+    color: navy;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.strike > span {
+    position: relative;
+    display: inline-block;
+}
+
+.strike > span:before,
+.strike > span:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 9999px;
+    height: 1px;
+    background: grey;
+}
+
+.strike > span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+
+.strike > span:after {
+    left: 100%;
+    margin-left: 15px;
+}
+
+
+.exclusive {
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.exclusive > span {
+    position: relative;
+    display: inline-block;
+}
+
+.exclusive > span:before,
+.exclusive > span:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 9999px;
+    height: 1px;
+    background: white;
+}
+
+.exclusive > span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+
+.exclusive > span:after {
+    left: 100%;
+    margin-left: 15px;
+}
+
+
+
+
+
+
+
+@media (max-width: 770px) {
+
+#imageLogo{
+     height: 35px;
+     width: 110px;
+    }
+
+
+
+  }
+
+
+@media (max-width: 993px) {
+
+#imageLogo{
+     height: 35px;
+     width: 110px;
+    }
+
+  }
+
+@media (max-width: 582px) {
+
+.strike{
+   font-size: 20px;
+
+    }
+   }
+
+}
+
+
+@media (min-width: 700px) and (max-width: 2000px) {
+
+}
+
+
+@media (max-width: 2000px) and (max-width: 2000px){
+.strike{
+   font-size: 32px;
+    }
+
+  }
+
+}
+
+@media (max-width: 400px) and (max-width: 765px){
+.col-sm-8{
+width: 100%;
+ }
+}
+
+
+
+
+@media (min-width: 400px) and (max-width: 500px) {
+.check{
+
+    padding: 0px 0px 0px 90px;
+
+  }
+}
+
+@media (min-width: 500px) and (max-width: 600px) {
+.check{
+
+    padding: 0px 0px 0px 200px;
+
+  }
+}
+
+@media (min-width: 600px) and (max-width: 700px) {
+.check{
+
+    padding: 0px 0px 0px 280px;
+
+  }
+}
+
+@media (min-width: 700px) and (max-width: 800px) {
+.check{
+
+    padding: 0px 0px 0px 380px;
+
+  }
+}
+
+@media (min-width: 800px) and (max-width: 900px) {
+.check{
+
+    padding: 0px 0px 0px 500px;
+
+  }
+}
+
+
+@media (min-width: 900px) and (max-width: 1000px) {
+.check{
+
+    padding: 0px 0px 0px 645px;
+
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1100px) {
+.check{
+
+    padding: 0px 0px 0px 752px;
+
+  }
+}
+
+@media (min-width: 1100px) and (max-width: 1200px) {
+.check{
+
+    padding: 0px 0px 0px 792px;
+
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1300px) {
+.check{
+
+    padding: 0px 0px 0px 888px;
+
+  }
+}
+
+@media (min-width: 1300px) and (max-width: 1400px) {
+.check{
+
+    padding: 0px 0px 0px 1000px;
+
+  }
+}
+
+@media (min-width: 1400px) and (max-width: 1500px) {
+.check{
+
+    padding: 0px 0px 0px 1100px;
+
+  }
+}
+
+
+body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.sidebar-nav {
+    padding: 9px 0;
+}
+
+.dropdown-menu .sub-menu {
+    left: 100%;
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    margin-top: -1px;
+}
+
+.dropdown-menu li:hover .sub-menu {
+    visibility: visible;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.nav-tabs .dropdown-menu, .nav-pills .dropdown-menu, .navbar .dropdown-menu {
+    margin-top: 0;
+}
+
+.navbar .sub-menu:before {
+    border-bottom: 7px solid transparent;
+    border-left: none;
+    border-right: 7px solid rgba(0, 0, 0, 0.2);
+    border-top: 7px solid transparent;
+    left: -7px;
+    top: 10px;
+}
+.navbar .sub-menu:after {
+    border-top: 6px solid transparent;
+    border-left: none;
+    border-right: 6px solid #fff;
+    border-bottom: 6px solid transparent;
+    left: 10px;
+    top: 11px;
+    left: -6px;
+}
+
+@media (min-width: 400px) and (max-width: 768px) {
+.nav {
+   margin: 0px 0px 0px 0px;
+
+   }
+}
+
+
+
+@media (min-width: 768px) and (max-width: 990px) {
+.nav {
+   margin: -58px 43px 0px 0px;
+
+   }
+}
+
+
+@media (min-width: 940px) and (max-width: 990px) {
+.nav {
+   margin: -58px -91px 0px 0px;
+
+   }
+}
+
+
+@media (min-width: 990px) and (max-width: 1001px) {
+.nav {
+   margin: -45px -180px 0px 0px;
+      font-size: 15pt;
+   }
+}
+
+
+
+@media (min-width: 1000px) and (max-width: 1100px) {
+.nav {
+   margin: -64px -176px 0px 0px;
+      font-size: 15pt;
+   }
+}
+
+
+
+@media (min-width: 1050px) and (max-width: 1100px) {
+.nav {
+   margin: -64px -127px 0px 0px;
+      font-size: 15pt;
+   }
+}
+
+
+
+@media (min-width: 1100px) and (max-width: 1200px) {
+.nav {
+   margin: -14px 13px 0px 0px;
+      font-size: 15pt;
+   }
+}
+
+
+@media (min-width: 1200px) and (max-width: 3000px) {
+.nav {
+   margin: -42px 43px 0px 0px;
+      font-size: 15pt;
+   }
+}
+
+
+//.glyphicon{
+//top: 19px;
+
+//}
+
+
+
+@media (min-width: 400px) and (max-width: 500px) {
+#mail{
+
+    padding-right: 44px;
+}
+
+}
+
+@media (min-width: 1300px) and (max-width: 1400px) {
+}
+
+@media (min-width: 1300px) and (max-width: 1400px) {
+}
+
+@media (min-width: 1300px) and (max-width: 1400px) {
+}
+
+@media (min-width: 1300px) and (max-width: 1400px) {
+}
+
+
+
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd;
+}
+
+button.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2212";
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+span{
+    color: #DAA520;
+}
+.col-sm-12{
+    background-color: #e3f2fd;
+}
+p{
+    color: black;
+    font-weight: bold;
+}
+.glyphicon, a{
+    color: #B8860B;
+}
+.navbar{
+    background-color: #eeeeee;
+}
+
+
+      </style>
+   </head>
+
+   <body data-offset="60" data-spy="scroll" data-target=".navbar" id="myPage">
+
+      <nav class="navbar navbar-default navbar-fixed-top">
+
+
+      <div id="top" class="container-fluid bg-grey" style="
+    height: 10px;
+    background-color: #eeeeee;
+">
+
+
+
+<div id="" class="check">
+
+<a href = "https://www.facebook.com/River-Edge-Mansion-Bed-Breakfast-150426095397" target="_blank" style="
+    padding-left: 56px;
+"><img class = "port" alt="River Edge Mansion Guests" src="img/facebook.jpeg" style="
+    width: 35px;
+    margin-right: 10px;
+"/></a>
+
+
+<a href = "https://www.tripadvisor.com/Hotel_Review-g48379-d118682-Reviews-River_Edge_Mansion_Bed_and_Breakfast-Pennellville_Finger_Lakes_New_York.html" target="_blank">
+<img class = "port" alt="River Edge Mansion Guests" src="img/hoot.png" style="
+    width: 35px;
+    margin-right: 10px;
+"/></a>
+
+
+<!--check availability -->
+
+<table width="200" border="0" cellspacing="0" cellpadding="4">
+                              <tbody><tr>
+                                 <td width="29%">
+
+                                    <script type="text/javascript">
+     var _trq = _trq || {}
+     _trq['hotel_short_name'] = '1922starkeyhouse';
+
+     (function() {
+
+     var tr = document.createElement('script');
+
+     tr.type = 'text/javascript';
+     tr.async = true;
+     tr.src = "http://www.thinkreservations.com/riveredgemansion/tr.js";
+
+     var s = document.getElementsByTagName('script')[0];
+     s.parentNode.insertBefore(tr, s);
+
+})();
+</script>
+
+
+<div data-align="right">
+    <a href="https://secure.thinkreservations.com/riveredgemansion/reservations" target="_blank"><button style="margin-top: 8px;" class="btn btn-warning">Check Availability Today!</button></a>
+</div>
+                                 </td>
+                              </tr>
+                           </tbody></table>
+
+<!--end check availability -->
+
+
+
+
+</div>
+
+<div>
+<a href = "index.htm"><img id = "imageLogo" alt="Daniel Bereza" height="80" src="img/logo.png" width="180"
+style="
+    margin: -80px 0px 0px 0px;
+"
+/></a>
+</div>
+<a href = "tel:315-695-3021"><span class="glyphicon glyphicon-earphone" style="
+    color: black;
+    font-size: 10pt;
+"> 315-695-3021</span></a>
+
+<div id = "mail">
+<a href = "mailto:riveredgemansion@gmail.com"><span class="glyphicon glyphicon-envelope" style="
+    float: right;
+    color: black;
+    font-size: 10px;
+"> riveredgemansion@gmail.com</span></a>
+</div>
+
+</div>
+
+
+<!--Start of header-->
+         <div class="container" style="
+    height: 41px;
+">
+
+            <div class="navbar-header"><button class="navbar-toggle" data-target="#myNavbar" data-toggle="collapse" type="button" style="
+               border: 2px groove;
+               background-color: grey;  margin: 32px 305px 0px 0px;
+               ">Menu</button>
+               <a class="navbar-brand" href="#home" style="
+               background-color: #eeeeee;
+               height: 41px;
+               ">
+            </a>
+         </div>
+
+            <div class="collapse navbar-collapse" id="myNavbar">
+
+
+               <ul class="nav navbar-nav navbar-right" style="
+    font-family: cursive;
+">
+
+
+                 <li class="dropdown">
+                <a style="
+    background-color: #feeeeee;
+">Welcome <span class="caret"></span></a>
+
+
+                <ul class="dropdown-menu">
+
+
+                   <li><a href="index.htm" style="
+    background-color: white;
+">Home</a></li>
+
+                  <li><a href="history.htm" style="
+    background-color: white;
+">History</a></li>
+                  <li><a href="breakfast.htm" style="
+    background-color: white;
+">Breakfast</a></li>
+                  <li><a href="comments.htm" style="
+    background-color: white;
+">Guest Reviews</a></li>
+                  <li><a href="directions.htm" style="
+    background-color: white;
+">Area & Directions</a></li>
+                  <li><a href="weddings.htm" style="
+    background-color: white;
+">Weddings & Gatherings</a></li>
+                  <li><a href="thingstodo.htm" style="
+    background-color: white;
+">Things to Do</a></li>
+                  <li><a href="certificates.htm" style="
+    background-color: white;
+">Gift Certificates</a></li>
+                </ul>
+              </li>
+
+
+                   <li><a id="accomedations" href="#accomedations" style="
+    background-color: #eeeeee;font-style: italic;
+">Rooms</a></li>
+                  <li><a id="services" href="#services" style="
+    background-color: #eeeeee;font-style: italic;
+">Policies</a></li>
+                  <li><a id="specials" href="#specials" style="
+    background-color: #eeeeee;font-style: italic;
+">Specials</a></li>
+
+<li><a href="http://riveredgemansion.blogspot.com" style="
+    background-color: #eeeeee;font-style: italic;
+" target="_blank">Blog</a></li>
+
+
+
+               </ul>
+
+
+            </div>
+         </div>
+       <!--End of header-->
+
+      </nav>
+
+
+      <!-- Container (About Section) -->
+      <div class="container-fluid" id="here" style="
+    background-color: #e3f2fd;
+">
+         <div class="row">
+      <div class="strike" style="
+    font-style: italic;
+    font-size: 32px;
+">
+
+
+<br>
+<br>
+<br>
+
+   <span>Gift Certificates</span>
+</div>
+
+
+ <div class="col-sm-12">
+
+<p>A gift certificate is always a welcome gift. We can design a gift certificate for a dollar amount of your choice, for example, "$100 Towards Your Stay at River Edge Mansion", or choose a room you like, such as "A Weekend Stay in the Seneca room". Gift certificates are good from one year from the last day of the month they are purchased. We accept Visa, Mastercard, Discover, American Express, check and cash for purchase of gift certificates. Call us at <a href = "tel:315-695-3021">315-695-3021</a> or email us at <a href = "mailto:riveredgemansion@gmail.com">riveredgemansion@gmail.com</a> to order a gift certificate today.  Gift certificates are not refundable and cannot be redeemed or exchanged for cash.  Any additional cost exceeding the value of the certificate is to be paid by the redeemer.  Contact the Innkeeper for reservations.</p>
+<br>
+
+
+ </div>
+
+
+ <div class="col-sm-12">
+
+
+
+
+ </div>
+
+
+
+         </div>
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+<div class="tr-availability-form-section tr-element" style="position: absolute; z-index: 99999; top: 107px; right: 16px; display: none;">
+<form accept-charset="UTF-8" action="https://secure.thinkreservations.com/riveredgemansion/reservations/availability" class="tr-availability-form" method="get" target="_top"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"></div>
+<input name="clear_session" type="hidden" value="true">
+<div class="tr-date-fields">
+<div class="tr-field tr-start-date">
+<label for="check_in">Check In</label>
+<input autocomplete="off" class="tr-start-date-input activeDate" name="start_date" readonly="readonly" type="text">
+</div>
+<div class="tr-field tr-end-date">
+<label for="check_out">Check Out</label>
+<input autocomplete="off" class="tr-end-date-input" name="end_date" readonly="readonly" type="text">
+</div>
+</div>
+<div class="tr-datepicker hasDatepicker" id="dp1489034509744"><div class="ui-datepicker-inline ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all" style="display: block;"><div class="ui-datepicker-header ui-widget-header ui-helper-clearfix ui-corner-all"><a class="ui-datepicker-prev ui-corner-all ui-state-disabled" title="Prev"><span class="ui-icon ui-icon-circle-triangle-w">Prev</span></a><a class="ui-datepicker-next ui-corner-all" data-handler="next" data-event="click" title="Next"><span class="ui-icon ui-icon-circle-triangle-e">Next</span></a><div class="ui-datepicker-title"><span class="ui-datepicker-month">March</span>&nbsp;<span class="ui-datepicker-year">2017</span></div></div><table class="ui-datepicker-calendar"><thead><tr><th class="ui-datepicker-week-end"><span title="Sunday">Su</span></th><th><span title="Monday">Mo</span></th><th><span title="Tuesday">Tu</span></th><th><span title="Wednesday">We</span></th><th><span title="Thursday">Th</span></th><th><span title="Friday">Fr</span></th><th class="ui-datepicker-week-end"><span title="Saturday">Sa</span></th></tr></thead><tbody><tr><td class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">26</span></td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">27</span></td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">28</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">1</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">2</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">3</span></td><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">4</span></td></tr><tr><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">5</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">6</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">7</span></td><td class=" ui-datepicker-days-cell-over  ui-datepicker-current-day ui-datepicker-today" data-handler="selectDay" data-event="click" data-month="2" data-year="2017"><a class="ui-state-default ui-state-highlight ui-state-active ui-state-hover" href="#">8</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="2" data-year="2017"><a class="ui-state-default" href="#">9</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="2" data-year="2017"><a class="ui-state-default" href="#">10</a></td><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="2" data-year="2017"><a class="ui-state-default" href="#">11</a></td></tr><tr><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="2" data-year="2017"><a class="ui-state-default" href="#">12</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="2" data-year="2017"><a class="ui-state-default" href="#">13</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="2" data-year="2017"><a class="ui-state-default" href="#">14</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="2" data-year="2017"><a class="ui-state-default" href="#">15</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="2" data-year="2017"><a class="ui-state-default" href="#">16</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="2" data-year="2017"><a class="ui-state-default" href="#">17</a></td><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="2" data-year="2017"><a class="ui-state-default" href="#">18</a></td></tr><tr><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="2" data-year="2017"><a class="ui-state-default" href="#">19</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="2" data-year="2017"><a class="ui-state-default" href="#">20</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="2" data-year="2017"><a class="ui-state-default" href="#">21</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="2" data-year="2017"><a class="ui-state-default" href="#">22</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="2" data-year="2017"><a class="ui-state-default" href="#">23</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="2" data-year="2017"><a class="ui-state-default" href="#">24</a></td><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="2" data-year="2017"><a class="ui-state-default" href="#">25</a></td></tr><tr><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="2" data-year="2017"><a class="ui-state-default" href="#">26</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="2" data-year="2017"><a class="ui-state-default" href="#">27</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="2" data-year="2017"><a class="ui-state-default" href="#">28</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="2" data-year="2017"><a class="ui-state-default" href="#">29</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="2" data-year="2017"><a class="ui-state-default" href="#">30</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="2" data-year="2017"><a class="ui-state-default" href="#">31</a></td><td class=" ui-datepicker-week-end ui-datepicker-other-month " data-handler="selectDay" data-event="click" data-month="3" data-year="2017"><a class="ui-state-default ui-priority-secondary" href="#">1</a></td></tr></tbody></table></div></div>
+<div class="tr-actions">
+<button class="tr-check-availability-go" name="button" type="submit">Check Availability</button>
+</div>
+</form>
+
+</div>
+
+
+
+
+<div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"></div>
+
+      <!--
+         <!-- Add Google Maps -->
+
+      <script>
+         function myMap() {
+
+         var myCenter = new google.maps.LatLng(43.205745, -76.217674);
+
+         var mapProp = {center:myCenter, zoom:15, scrollwheel:false, draggable:true, mapTypeId:google.maps.MapTypeId.ROADMAP};
+
+         var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+         var marker = new google.maps.Marker({position:myCenter});
+         marker.setMap(map);
+
+         }
+
+      </script>
+
+<!-- Container (Contact Section) -->
+      <div id="" class="container-fluid bg-grey" style="
+    background-color: #e3f2fd;
+">
+
+<div class="strike">
+   <span style="
+    font-size: 18px;
+">CONTACT US</span>
+</div>
+
+
+<br>
+
+         <div class="row">
+            <div class="col-sm-7">
+
+
+               <div id="googleMap" style="height:400px;width:100%;"></div>
+
+
+               <!--<p><span class="glyphicon glyphicon-map-marker"></span> CT, US</p>-->
+
+
+               <div id="TA_cdsscrollingravenarrow343" class="TA_cdsscrollingravenarrow">
+                  <div id="CDSSCROLLINGRAVE" class="white   border   narrow ">
+
+                     <marquee behavior="scroll" scrollamount="3" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
+                        <div>
+                           <span>
+
+                           </span>
+                        </div>
+                     </marquee>
+                  </div>
+               </div>
+
+               <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+            </div>
+
+    <div class="col-sm-5 slideanim slide" style="
+    margin: 0px 0px 10px;
+">
+               <p style="
+    margin: 0 0 -2px;
+">Feel free to check online for availability and call us if you have any questions regarding event hosting or arrangement groups.  We will be happy to assist you in any way.</p>
+
+               <p style="
+    margin: 0 0 -2px;
+"><span class="glyphicon glyphicon-map-marker" style="
+    color:  #B8860B;
+"></span> 1 County Route Route 10, Pennellville, NY 13132</p>
+
+      <p style="
+    margin: 0 0 -2px;
+"><span class="glyphicon glyphicon-phone" style="
+    color:  #B8860B;
+"></span> 315 - 695 - 3021</p>
+
+      <a href="www.riveredgemansion.com" style="
+    color:  #B8860B;
+    margin: 0 0 -2px;
+"><p style="
+    margin: 0 0 -2px;
+"><span class="glyphicon glyphicon-globe"></span> www.riveredgemansion.com</p></a>
+
+               <div class="row" style="
+    /* height: 79px; */
+">
+                  <div class="col-sm-8" style="
+    /* height: 64px; */
+    margin: 0 0 -24px;
+">
+                     <!-- A php form that will send an email to the owner and at the same time store contact information in a sql table backend once connected-->
+
+                     <form action="/scripts/sqlForm.php" method="post" style="
+    margin: 0 0 -2px;
+">
+                        First Name: <input class="form-control" id="formFirst" type="text" name="formFirst" placeholder="Your name" required="" style="
+    margin: 0 0 -4px;
+    width: 155%;
+"><br>
+                  </form></div>
+
+                  <div class="col-sm-8" style="
+    margin: 0 0 -24px;
+">
+                  Email: <input class="form-control" id="formEmail" type="text" name="formEmail" placeholder="Your Email" required="" style="
+    width: 155%;
+"><br>
+                  </div>
+
+                  <div class="col-sm-8">
+                  Message:<br><textarea class="form-control" rows="4" name="formMessage" cols="30" placeholder="Write down your message" required="" style="
+    width: 155%;
+"></textarea><br>
+                  </div>
+
+                  <div class="col-sm-6" style="
+    float: right;
+">
+                  <input type="submit" name="formSubmit" value="Send" class="btn btn-warning" style="
+    float: right;
+">
+                  </div>
+               </div>
+            </div>
+      </div>
+      </div>
+
+<div id="footer" class="container-fluid bg-white">
+
+
+
+
+
+<br>
+
+
+<a href="#here">
+<center><button type="button" class="btn btn-warning">Back to Top</button></center></a>
+
+<br>
+
+<center><p>&copy; 2017 River Edge Bed and Breakfast </p></center>
+</div>
+
+
+      <!--AIzaSyC9zesoTGK5Ra_73PJMuLefHGJ-fKCQFVk-->
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9zesoTGK5Ra_73PJMuLefHGJ-fKCQFVk&callback=myMap"></script>
+      <footer class="container-fluid text-center">
+         <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', '#', 'auto');
+            ga('send', 'pageview');
+
+         </script>
+      </footer>
+
+
+      <script>
+         $(document).ready(function(){
+
+              $('#accomedations').click(function(){
+
+                     window.location='index.htm#accomedations';
+                 });
+                 $('#services').click(function(){
+
+                     window.location='index.htm#services';
+                 });
+                 $('#specials').click(function(){
+
+                     window.location='index.htm#specials';
+                 });
+
+
+           // Add smooth scrolling to all links
+           $("a").on('click', function(event) {
+
+             // Make sure this.hash has a value before overriding default behavior
+             if (this.hash !== "") {
+
+               // Prevent default anchor click behavior
+               event.preventDefault();
+
+               // Store hash
+               var hash = this.hash;
+
+               // Using jQuery's animate() method to add smooth page scroll
+
+               // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+               $('html, body').animate({
+                 scrollTop: $(hash).offset().top
+               }, 900, function(){
+
+                 // Add hash (#) to URL when done scrolling (default click behavior)
+                 window.location.hash = hash;
+               });
+             } // End if
+           });
+
+           $(window).scroll(function() {
+             $(".slideanim").each(function(){
+
+               var pos = $(this).offset().top;
+
+               var winTop = $(window).scrollTop();
+
+                 if (pos < winTop + 600) {
+                   $(this).addClass("slide");
+                 }
+             });
+           });
+         })
+      </script>
+
+   </body>
+</html>
